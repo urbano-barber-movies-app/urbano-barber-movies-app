@@ -17,7 +17,7 @@
     {
       "id": 3,
       "title": "The Dark Knight",
-      "rating": 9,
+      "rating": 9.0,
       "movieSummary": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
       "genre": "Action, Crime, Drama"
     },
@@ -62,6 +62,292 @@
       "rating": 8.8,
       "movieSummary": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
       "genre": "Drama"
-    }
-  ]
+    },
+    {
+      "id": 10,
+      "title": "Goodfellas",
+      "rating": 8.7,
+      "movieSummary": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 11,
+      "title": "The Shawshank Redemption",
+      "rating": 9.3,
+      "movieSummary": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "genre": "Drama"
+    },
+    {
+      "id": 12,
+      "title": "The Godfather",
+      "rating": 9.2,
+      "movieSummary": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 13,
+      "title": "The Dark Knight",
+      "rating": 9.0,
+      "movieSummary": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+      "genre": "Action, Crime, Drama"
+    },
+    {
+      "id": 14,
+      "title": "Pulp Fiction",
+      "rating": 8.9,
+      "movieSummary": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 15,
+      "title": "The Lord of the Rings: The Return of the King",
+      "rating": 8.9,
+      "movieSummary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "genre": "Adventure, Drama, Fantasy"
+    },
+    {
+      "id": 16,
+      "title": "Forrest Gump",
+      "rating": 8.8,
+      "movieSummary": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.",
+      "genre": "Drama, Romance"
+    },
+    {
+      "id": 17,
+      "title": "Inception",
+      "rating": 8.8,
+      "movieSummary": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "genre": "Action, Adventure, Sci-Fi"
+    },
+    {
+      "id": 18,
+      "title": "The Matrix",
+      "rating": 8.7,
+      "movieSummary": "A computer programmer discovers that reality as he knows it is a simulation created by machines, and he joins a group of rebels to break free.",
+      "genre": "Action, Sci-Fi"
+    },
+    {
+      "id": 19,
+      "title": "Fight Club",
+      "rating": 8.8,
+      "movieSummary": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+      "genre": "Drama"
+    },
+    {
+      "id": 20,
+      "title": "Goodfellas",
+      "rating": 8.7,
+      "movieSummary": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 21,
+      "title": "Interstellar",
+      "rating": 8.6,
+      "movieSummary": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "genre": "Adventure, Drama, Sci-Fi"
+    },
+    {
+      "id": 22,
+      "title": "Schindler's List",
+      "rating": 8.9,
+      "movieSummary": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "genre": "Biography, Drama, History"
+    },
+    {
+      "id": 23,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "rating": 8.8,
+      "movieSummary": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "genre": "Action, Adventure, Drama"
+    },
+    {
+      "id": 24,
+      "title": "Se7en",
+      "rating": 8.6,
+      "movieSummary": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+      "genre": "Crime, Drama, Mystery"
+    },
+    {
+      "id": 25,
+      "title": "The Silence of the Lambs",
+      "rating": 8.6,
+      "movieSummary": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "genre": "Crime, Drama, Thriller"
+    },
+    {
+      "id": 26,
+      "title": "Saving Private Ryan",
+      "rating": 8.6,
+      "movieSummary": "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
+      "genre": "Drama, War"
+    },
+    {
+      "id": 27,
+      "title": "The Green Mile",
+      "rating": 8.6,
+      "movieSummary": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+      "genre": "Crime, Drama, Fantasy"
+    },
+    {
+      "id": 28,
+      "title": "The Usual Suspects",
+      "rating": 8.5,
+      "movieSummary": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+      "genre": "Crime, Drama, Mystery"
+    },{
+      "id": 29,
+      "title": "The Lion King",
+      "rating": 8.5,
+      "movieSummary": "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.",
+      "genre": "Animation, Adventure, Drama"
+    },
+    {
+  "id": 30,
+  "title": "Léon: The Professional",
+  "rating": 8.5,
+  "movieSummary": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade.",
+  "genre": "Action, Crime, Drama"
+},
+{
+"id": 31,
+"title": "Spirited Away",
+"rating": 8.6,
+"movieSummary": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+"genre": "Animation, Adventure, Family"
+},
+{
+"id": 32,
+"title": "Gladiator",
+"rating": 8.5,
+"movieSummary": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+"genre": "Action, Adventure, Drama"
+},
+{
+"id": 33,
+"title": "The Intouchables",
+"rating": 8.5,
+"movieSummary": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
+"genre": "Biography, Comedy, Drama"
+},
+{
+"id": 34,
+"title": "American History X",
+"rating": 8.5,
+"movieSummary": "A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did.",
+"genre": "Drama"
+},
+{
+"id": 35,
+"title": "The Pianist",
+"rating": 8.5,
+"movieSummary": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
+"genre": "Biography, Drama, Music"
+},
+{
+"id": 36,
+"title": "The Departed",
+"rating": 8.5,
+"movieSummary": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+"genre": "Crime, Drama, Thriller"
+},
+{
+"id": 37,
+"title": "Whiplash",
+"rating": 8.5,
+"movieSummary": "A promising young drummer enrolls at a cutthroat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
+"genre": "Drama, Music"
+},
+{
+"id": 38,
+"title": "Gladiator",
+"rating": 8.5,
+"movieSummary": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+"genre": "Action, Adventure, Drama"
+},
+{
+"id": 39,
+"title": "The Dark Knight Rises",
+"rating": 8.4,
+"movieSummary": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
+"genre": "Action, Adventure"
+},
+{
+"id": 40,
+"title": "Princess Mononoke",
+"rating": 8.4,
+"movieSummary": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest, he also meets San, the Mononoke Hime.",
+"genre": "Animation, Action, Adventure"
+},
+{
+"id": 41,
+"title": "Once Upon a Time in America",
+"rating": 8.4,
+"movieSummary": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
+"genre": "Crime, Drama"
+},
+{
+"id": 42,
+"title": "The Lives of Others",
+"rating": 8.4,
+"movieSummary": "In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives.",
+"genre": "Drama, Mystery, Thriller"
+},
+{
+"id": 43,
+"title": "Cinema Paradiso",
+"rating": 8.5,
+"movieSummary": "A filmmaker recalls his childhood when falling in love with the pictures at the cinema of his home village and forms a deep friendship with the cinema's projectionist.",
+"genre": "Drama"
+},
+{
+"id": 44,
+"title": "Paths of Glory",
+"rating": 8.4,
+"movieSummary": "After refusing to attack an enemy position, a general accuses the soldiers of cowardice and their commanding officer must defend them.",
+"genre": "Drama, War"
+},
+{
+"id": 45,
+"title": "American Beauty",
+"rating": 8.3,
+"movieSummary": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
+"genre": "Drama"
+},
+{
+"id": 46,
+"title": "The Shining",
+"rating": 8.4,
+"movieSummary": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
+"genre": "Drama, Horror"
+},
+{
+"id": 47,
+"title": "WALL·E",
+"rating": 8.4,
+"movieSummary": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of humanity.",
+"genre": "Animation, Adventure, Family"
+},
+{
+"id": 48,
+"title": "The Green Mile",
+"rating": 8.6,
+"movieSummary": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+"genre": "Crime, Drama, Fantasy"
+},
+{
+"id": 49,
+"title": "The Usual Suspects",
+"rating": 8.5,
+"movieSummary": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+"genre": "Crime, Drama, Mystery"
+},
+{
+"id": 50,
+"title": "Leon: The Professional",
+"rating": 8.5,
+"movieSummary": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade.",
+"genre": "Action, Crime, Drama"
+}
+]
 }
