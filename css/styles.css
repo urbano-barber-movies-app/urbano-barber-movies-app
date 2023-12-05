@@ -6,6 +6,7 @@ body {
 
 /* Style the poster container */
 .poster-container {
+    margin-top: 10px;
     position: relative;
     overflow: hidden;
 }
@@ -24,13 +25,26 @@ body {
 }
 
 /* Style the summary text */
+/*.summary-text {*/
+/*    padding: 15px;*/
+/*    margin: 0;*/
+/*    font-size: 16px;*/
+/*    text-align: left;*/
+/*}*/
+/* Add this CSS to your existing styles.css or include it in the HTML head */
 .summary-text {
-    padding: 15px;
-    margin: 0;
-    font-size: 16px;
-    text-align: left;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color and opacity as needed */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1; /* Ensure the summary text appears above the image */
 }
-
 /* Style the movie cards */
 .card {
     width: 300px; /* Adjust the card width as needed */

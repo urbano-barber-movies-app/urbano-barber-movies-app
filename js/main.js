@@ -1,5 +1,3 @@
-// main.js
-
 const API_KEY = '4f538816';
 let moviesData; // Store movies data globally
 
@@ -10,13 +8,6 @@ function createMovieCard(movie) {
     const card = document.createElement('div');
     card.className = 'col-md-4 mb-4 card';
 
-    const cardBody = document.createElement('div');
-    cardBody.className = 'card-body';
-
-    const titleElement = document.createElement('h5');
-    titleElement.className = 'card-title';
-    titleElement.textContent = movie.title;
-
     const posterContainer = document.createElement('div');
     posterContainer.className = 'poster-container';
 
@@ -24,16 +15,20 @@ function createMovieCard(movie) {
     posterElement.className = 'card-img-top';
     posterElement.src = ''; // Leave it blank for now, we'll set it below
 
-    const summaryContainer = document.createElement('div');
-    summaryContainer.className = 'summary-container';
+    const cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
 
-    const ratingElement = document.createElement('p');
-    ratingElement.className = 'card-text';
-    ratingElement.textContent = `Rating: ${movie.rating}`;
+    const titleElement = document.createElement('h5');
+    titleElement.className = 'card-title';
+    titleElement.textContent = movie.title;
 
     const genreElement = document.createElement('p');
     genreElement.className = 'card-text';
     genreElement.textContent = `Genre: ${movie.genre}`;
+
+    const ratingElement = document.createElement('p');
+    ratingElement.className = 'card-text';
+    ratingElement.textContent = `Rating: ${movie.rating}`;
 
     const summaryText = document.createElement('p');
     summaryText.className = 'summary-text';
@@ -44,14 +39,13 @@ function createMovieCard(movie) {
     posterElement.style.height = '400px'; // Adjust the height as needed
 
     // Append elements
+    card.appendChild(posterContainer);
+    posterContainer.appendChild(posterElement);
+    card.appendChild(cardBody);
     cardBody.appendChild(titleElement);
-    summaryContainer.appendChild(summaryText);
     cardBody.appendChild(genreElement);
     cardBody.appendChild(ratingElement);
-    posterContainer.appendChild(posterElement);
-    posterContainer.appendChild(summaryContainer);
-    cardBody.appendChild(posterContainer);
-    card.appendChild(cardBody);
+    cardBody.appendChild(summaryText);
     movieListContainer.appendChild(card);
 
     // Fetch the poster image and set the src attribute
@@ -61,14 +55,20 @@ function createMovieCard(movie) {
         .then(data => {
             if (data.Poster) {
                 posterElement.src = data.Poster;
-                ratingElement.textContent = `Rating: ${data.imdbRating}`;
-                genreElement.textContent = `Genre: ${data.Genre}`;
-                summaryText.textContent = `Summary: ${data.Plot}`;
             }
         })
         .catch(error => {
             console.error(`Error fetching data for ${movie.title}:`, error.message);
         });
+
+    // Add hover effect to show summary
+    card.addEventListener('mouseenter', function () {
+        summaryText.style.display = 'block';
+    });
+
+    card.addEventListener('mouseleave', function () {
+        summaryText.style.display = 'none';
+    });
 }
 
 // Fetch movies data from the JSON file
