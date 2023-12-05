@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+<div class="loading-center">
+<div class="pl">
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__dot"></div>
+    <div class="pl__text">Loading…</div>
+</div>
+</div>
+<div class="movie-list">
+    <h1>Movies</h1>
+    <ul id="movie-list-container">
+        <!-- Movie items will be added here -->
+    </ul>
+    <form id="add-movie-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required>
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" min="1" max="5" required>
+        <button type="submit">Add Movie</button>
+    </form>
+</div>
 
 </body>
+<script type="module" src="js/main.js"></script>
 </html>

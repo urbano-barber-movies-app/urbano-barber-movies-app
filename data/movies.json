@@ -2,8 +2,73 @@
   "movies": [
     {
       "id": 1,
-      "title": "Shrek",
-      "rating": 5
+      "title": "The Shawshank Redemption",
+      "rating": 9.3,
+      "movieSummary": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "genre": "Drama"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "rating": 9.2,
+      "movieSummary": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "rating": 9.0,
+      "movieSummary": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+      "genre": "Action, Crime, Drama"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "rating": 8.9,
+      "movieSummary": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 5,
+      "title": "The Lord of the Rings: The Return of the King",
+      "rating": 8.9,
+      "movieSummary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "genre": "Adventure, Drama, Fantasy"
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "rating": 8.8,
+      "movieSummary": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.",
+      "genre": "Drama, Romance"
+    },
+    {
+      "id": 7,
+      "title": "Inception",
+      "rating": 8.8,
+      "movieSummary": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "genre": "Action, Adventure, Sci-Fi"
+    },
+    {
+      "id": 8,
+      "title": "The Matrix",
+      "rating": 8.7,
+      "movieSummary": "A computer programmer discovers that reality as he knows it is a simulation created by machines, and he joins a group of rebels to break free.",
+      "genre": "Action, Sci-Fi"
+    },
+    {
+      "id": 9,
+      "title": "Fight Club",
+      "rating": 8.8,
+      "movieSummary": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+      "genre": "Drama"
+    },
+    {
+      "id": 10,
+      "title": "Goodfellas",
+      "rating": 8.7,
+      "movieSummary": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+      "genre": "Crime, Drama"
     }
   ]
 }
