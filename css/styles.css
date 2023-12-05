@@ -2,7 +2,63 @@ body {
     background-color: lightgrey;
 }
 
+/* Add this CSS code to your styles.css file */
 
+/* Style the poster container */
+.poster-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style the summary container */
+.summary-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Use an rgba color with opacity */
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Transition for the sliding effect */
+    transform: translateY(100%); /* Initially, hide the summary off-screen */
+    z-index: 1; /* Ensure the overlay appears above the poster */
+}
+
+/* Style the summary text */
+.summary-text {
+    padding: 15px;
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Style the movie cards */
+.card {
+    width: 300px; /* Adjust the card width as needed */
+    margin: 20px; /* Add margin to separate the cards */
+}
+
+/* Style the movie poster on hover */
+.card:hover .summary-container {
+    transform: translateY(0); /* Slide up to reveal the summary on hover */
+}
+
+/* Style the movie title on hover */
+.card-title {
+    transition: color 0.3s ease; /* Transition for title color change */
+}
+
+/* Hide the summary initially */
+.summary-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Add a smooth opacity transition */
+}
+
+/* Show the summary on poster hover */
+.poster-container:hover .summary-container {
+    display: block;
+    opacity: 1; /* Fade in when displayed */
+}
 
 
 

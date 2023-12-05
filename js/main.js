@@ -1,11 +1,14 @@
+// main.js
+
 const API_KEY = '4f538816';
+let moviesData; // Store movies data globally
 
 function createMovieCard(movie) {
     const movieListContainer = document.getElementById('movie-list-container');
 
     // Create Bootstrap card elements
     const card = document.createElement('div');
-    card.className = 'col-md-4 mb-4';
+    card.className = 'col-md-4 mb-4 card';
 
     const cardBody = document.createElement('div');
     cardBody.className = 'card-body';
@@ -14,32 +17,40 @@ function createMovieCard(movie) {
     titleElement.className = 'card-title';
     titleElement.textContent = movie.title;
 
-    const ratingElement = document.createElement('p');
-    ratingElement.className = 'card-text';
-    ratingElement.textContent = `Rating: ${movie.rating}`;
-
-    const summaryElement = document.createElement('p');
-    summaryElement.className = 'card-text';
-    summaryElement.textContent = `Summary: ${movie.movieSummary}`;
-
-    const genreElement = document.createElement('p');
-    genreElement.className = 'card-text';
-    genreElement.textContent = `Genre: ${movie.genre}`;
+    const posterContainer = document.createElement('div');
+    posterContainer.className = 'poster-container';
 
     const posterElement = document.createElement('img');
     posterElement.className = 'card-img-top';
     posterElement.src = ''; // Leave it blank for now, we'll set it below
 
+    const summaryContainer = document.createElement('div');
+    summaryContainer.className = 'summary-container';
+
+    const ratingElement = document.createElement('p');
+    ratingElement.className = 'card-text';
+    ratingElement.textContent = `Rating: ${movie.rating}`;
+
+    const genreElement = document.createElement('p');
+    genreElement.className = 'card-text';
+    genreElement.textContent = `Genre: ${movie.genre}`;
+
+    const summaryText = document.createElement('p');
+    summaryText.className = 'summary-text';
+    summaryText.textContent = `Summary: ${movie.movieSummary}`;
+
     // Set a uniform size for the poster image
     posterElement.style.width = '100%';
-    posterElement.style.height = '600px'; // Adjust the height as needed
+    posterElement.style.height = '400px'; // Adjust the height as needed
 
     // Append elements
     cardBody.appendChild(titleElement);
-    cardBody.appendChild(ratingElement);
-    cardBody.appendChild(summaryElement);
+    summaryContainer.appendChild(summaryText);
     cardBody.appendChild(genreElement);
-    card.appendChild(posterElement);
+    cardBody.appendChild(ratingElement);
+    posterContainer.appendChild(posterElement);
+    posterContainer.appendChild(summaryContainer);
+    cardBody.appendChild(posterContainer);
     card.appendChild(cardBody);
     movieListContainer.appendChild(card);
 
@@ -50,10 +61,13 @@ function createMovieCard(movie) {
         .then(data => {
             if (data.Poster) {
                 posterElement.src = data.Poster;
+                ratingElement.textContent = `Rating: ${data.imdbRating}`;
+                genreElement.textContent = `Genre: ${data.Genre}`;
+                summaryText.textContent = `Summary: ${data.Plot}`;
             }
         })
         .catch(error => {
-            console.error(`Error fetching poster for ${movie.title}:`, error.message);
+            console.error(`Error fetching data for ${movie.title}:`, error.message);
         });
 }
 
@@ -65,7 +79,8 @@ fetch('data/movies.json')
         }
         return response.json();
     })
-    .then(moviesData => {
+    .then(data => {
+        moviesData = data; // Store movies data globally
         // Populate movie cards
         moviesData.movies.forEach(movie => {
             createMovieCard(movie);
@@ -82,19 +97,29 @@ addMovieForm.addEventListener('submit', function (event) {
 
     // Get values from the form
     const title = document.getElementById('title').value;
-    const rating = document.getElementById('rating').value;
 
-    // Create a new movie object
-    const newMovie = {
-        id: Date.now(), // Use a timestamp as a unique ID for simplicity
-        title: title,
-        rating: parseFloat(rating),
-        // Add other properties as needed
-    };
+    // Fetch additional movie data from the API
+    const apiUrl = `http://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=${API_KEY}`;
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            if (data.Poster) {
+                const newMovie = {
+                    id: Date.now(), // Use a timestamp as a unique ID for simplicity
+                    title: data.Title,
+                    rating: data.imdbRating,
+                    movieSummary: data.Plot,
+                    genre: data.Genre,
+                };
 
-    // Add the new movie to the data and create a card for it
-    moviesData.movies.push(newMovie);
-    createMovieCard(newMovie);
+                // Add the new movie to the data and create a card for it
+                moviesData.movies.push(newMovie);
+                createMovieCard(newMovie);
+            }
+        })
+        .catch(error => {
+            console.error(`Error fetching data for ${title}:`, error.message);
+        });
 
     // Clear the form
     addMovieForm.reset();
