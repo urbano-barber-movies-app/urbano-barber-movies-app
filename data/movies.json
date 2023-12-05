@@ -17,7 +17,7 @@
     {
       "id": 3,
       "title": "The Dark Knight",
-      "rating": 9.0,
+      "rating": 9,
       "movieSummary": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
       "genre": "Action, Crime, Drama"
     },
@@ -62,13 +62,6 @@
       "rating": 8.8,
       "movieSummary": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
       "genre": "Drama"
-    },
-    {
-      "id": 10,
-      "title": "Goodfellas",
-      "rating": 8.7,
-      "movieSummary": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
-      "genre": "Crime, Drama"
     }
   ]
 }

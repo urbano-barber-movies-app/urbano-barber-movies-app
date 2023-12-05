@@ -17,10 +17,11 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 50%;
     background-color: rgba(255, 255, 255, 0.9); /* Use an rgba color with opacity */
     overflow: hidden;
     transition: transform 0.3s ease; /* Transition for the sliding effect */
-    transform: translateY(100%); /* Initially, hide the summary off-screen */
+    transform: translateY(50%); /* Initially, hide the summary off-screen */
     z-index: 1; /* Ensure the overlay appears above the poster */
 }
 
@@ -38,7 +39,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
     background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color and opacity as needed */
     color: white;
     padding: 20px;
@@ -72,6 +73,48 @@ body {
 .poster-container:hover .summary-container {
     display: block;
     opacity: 1; /* Fade in when displayed */
+}
+
+/* Add this CSS to your existing styles.css or include it in the HTML head */
+.btn-edit {
+    display: block;
+    margin: 0 auto;
+    /*margin-bottom: 10px;*/
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.edit-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.edit-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.edit-form input,
+.edit-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.edit-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
 }
 
 
