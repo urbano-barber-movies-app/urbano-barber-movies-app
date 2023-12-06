@@ -76,9 +76,6 @@ function createMovieCard(movie) {
             }
         });
 
-        // Append delete button to the edit form
-        // document.getElementById('editForm').appendChild(deleteButton);
-
         document.getElementById('editForm').style.display = 'block';
     });
 
@@ -115,74 +112,33 @@ function createMovieCard(movie) {
     });
 }
 
-// Function to update the UI with edited information
-// function updateMovieCardUI(index, editedMovie) {
-//     const movieListContainer = document.getElementById('movie-list-container');
-//     const card = movieListContainer.children[index];
-//     if (card) {
-//         const titleElement = card.querySelector('.card-title');
-//         const genreElement = card.querySelector('.card-text:nth-child(2)');
-//         const ratingElement = card.querySelector('.card-text:nth-child(3)');
-//         const summaryText = card.querySelector('.summary-text');
-//
-//         // Update DOM elements with edited information
-//         titleElement.textContent = editedMovie.title;
-//         genreElement.textContent = `Genre: ${editedMovie.genre}`;
-//         ratingElement.textContent = `Rating: ${editedMovie.rating}`;
-//         summaryText.textContent = `Summary: ${editedMovie.movieSummary}`;
-//     }
-// }
+// Function to fetch movies data from the JSON file and create movie cards
+function fetchMoviesAndCreateCards() {
+    fetch('http://localhost:3000/movies')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            moviesData = data;
 
-// Function to update the UI with edited information
-// function updateMovieCardUI(index, editedMovie) {
-//     const movieListContainer = document.getElementById('movie-list-container');
-//     const card = movieListContainer.children[index];
-//     if (card) {
-//         const titleElement = card.querySelector('.card-title');
-//         const genreElement = card.querySelector('.card-text:nth-child(2)');
-//         const ratingElement = card.querySelector('.card-text:nth-child(3)');
-//         const summaryText = card.querySelector('.summary-text');
-//
-//         // Update DOM elements with edited information
-//         titleElement.textContent = editedMovie.title;
-//         genreElement.textContent = `Genre: ${editedMovie.genre}`;
-//         ratingElement.textContent = `Rating: ${editedMovie.rating}`;
-//         summaryText.textContent = `Summary: ${editedMovie.movieSummary}`;
-//
-//         // Fetch updated information from the JSON server
-//         const jsonServerUrl = `http://localhost:3000/movies/${editedMovie.id}`;
-//         fetch(jsonServerUrl)
-//             .then(response => response.json())
-//             .then(data => {
-//                 // Update poster if available
-//                 const posterElement = card.querySelector('.card-img-top');
-//                 if (data.Poster) {
-//                     posterElement.src = data.Poster;
-//                 }
-//             })
-//             .catch(error => {
-//                 console.error(`Error fetching updated data for ${editedMovie.title}:`, error.message);
-//             });
-//     }
-// }
+            // Clear the loading screen
+            const loadingScreen = document.querySelector('.loading-center');
+            loadingScreen.style.display = 'none';
 
-// Fetch movies data from the JSON file
-fetch('http://localhost:3000/movies')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        moviesData = data;
-        moviesData.forEach(movie => {
-            createMovieCard(movie);
+            moviesData.forEach(movie => {
+                createMovieCard(movie);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching movies data:', error.message);
         });
-    })
-    .catch(error => {
-        console.error('Error fetching movies data:', error.message);
-    });
+}
+
+// Call the function to fetch movies data and create cards
+fetchMoviesAndCreateCards();
 
 // Event listener for the "Save" button in the edit form
 document.getElementById('saveEdit').addEventListener('click', function () {
@@ -235,7 +191,6 @@ document.getElementById('saveEdit').addEventListener('click', function () {
     document.getElementById('editForm').style.display = 'none';
 });
 
-
 const addMovieForm = document.getElementById('add-movie-form');
 addMovieForm.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -255,24 +210,29 @@ addMovieForm.addEventListener('submit', function (event) {
                     genre: data.Genre,
                 };
 
-                moviesData.push(newMovie);
-                createMovieCard(newMovie);
+                // Check if the movie title already exists
+                if (!moviesData.some(movie => movie.title === newMovie.title)) {
+                    moviesData.push(newMovie);
+                    createMovieCard(newMovie);
 
-                const jsonServerUrl = 'http://localhost:3000/movies';
-                fetch(jsonServerUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(newMovie),
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log('Movie added to the local JSON server:', data);
+                    const jsonServerUrl = 'http://localhost:3000/movies';
+                    fetch(jsonServerUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(newMovie),
                     })
-                    .catch(error => {
-                        console.error('Error adding movie to the local JSON server:', error.message);
-                    });
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log('Movie added to the local JSON server:', data);
+                        })
+                        .catch(error => {
+                            console.error('Error adding movie to the local JSON server:', error.message);
+                        });
+                } else {
+                    console.log('Movie already exists in the list.');
+                }
             }
         })
         .catch(error => {

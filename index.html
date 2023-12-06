@@ -28,18 +28,18 @@
         </div>
     </div>
     <div class="movie-list">
-        <h1 class="mt-4 movie-header">Movies</h1>
+        <h1 class="mt-4 movie-header">Movies App</h1>
+        <form id="add-movie-form" class="mt-4">
+            <div class="mb-3">
+                <label for="title" class="form-label">Title:</label>
+                <input type="text" class="form-control" id="title" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Movie</button>
+        </form>
         <div class="row" id="movie-list-container">
             <!-- Movie cards will be added here -->
         </div>
     </div>
-    <form id="add-movie-form" class="mt-4">
-        <div class="mb-3">
-            <label for="title" class="form-label">Title:</label>
-            <input type="text" class="form-control" id="title" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Add Movie</button>
-    </form>
 </div>
 
 <div id="editForm" class="edit-form">

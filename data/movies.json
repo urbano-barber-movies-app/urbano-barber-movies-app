@@ -1,109 +1,46 @@
 {
   "movies": [
     {
-      "id": 1701878950689,
-      "title": "Die Hard",
-      "rating": "8.2",
-      "genre": "Action, Thriller",
-      "movieSummary": "A New York City polic"
-    },
-    {
-      "id": 1701878952460,
-      "title": "300",
-      "rating": "7.6",
-      "genre": "Action, Drama",
-      "movieSummary": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C. this is an edit this is another edit this is a third edit"
-    },
-    {
-      "id": 1701878956769,
-      "title": "Shrek",
-      "rating": "7.9",
-      "movieSummary": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701878959209,
-      "title": "Shrek 2",
-      "rating": "7.3",
-      "movieSummary": "Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701879015498,
-      "title": "Shrek the Third",
-      "rating": "6.1",
-      "movieSummary": "Reluctantly designated as the heir to the land of Far, Far Away, Shrek hatches a plan to install the rebellious Artie as the new king while Princess Fiona tries to fend off a coup d'état by the jilted Prince Charming.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701879030139,
+      "id": 1701884197071,
       "title": "Cars",
       "rating": "7.2",
       "movieSummary": "On the way to the biggest race of his life, a hotshot rookie race car gets stranded in a rundown town and learns that winning isn't everything in life.",
       "genre": "Animation, Adventure, Comedy"
     },
     {
-      "id": 1701879032832,
+      "id": 1701884602597,
       "title": "Cars 2",
       "rating": "6.2",
       "movieSummary": "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international e...",
       "genre": "Animation, Adventure, Comedy"
     },
     {
-      "id": 1701879034580,
+      "id": 1701884604900,
       "title": "Cars 3",
       "rating": "6.7",
       "movieSummary": "Lightning McQueen sets out to prove to a new generation of racers that he's still the best race car in the world.",
       "genre": "Animation, Adventure, Comedy"
     },
     {
-      "id": 1701879038661,
-      "title": "Toy Story",
-      "rating": "8.3",
-      "movieSummary": "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's bedroom.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701879042705,
-      "title": "Toy Story 2",
+      "id": 1701884607411,
+      "title": "Shrek",
       "rating": "7.9",
-      "movieSummary": "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save Woody before he becomes a museum toy property with his roundup gang Jessie, Prospector, and Bullseye.",
+      "movieSummary": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
       "genre": "Animation, Adventure, Comedy"
     },
     {
-      "id": 1701879045723,
-      "title": "Toy Story 3",
-      "rating": "8.3",
-      "movieSummary": "The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned and to return home.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701879051671,
-      "title": "Toy Story 4",
-      "rating": "7.7",
-      "movieSummary": "When a new toy called \"Forky\" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701879064082,
-      "title": "Frozen",
-      "rating": "7.4",
-      "movieSummary": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather co...",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701879068729,
-      "title": "Die Hard 2",
-      "rating": "7.1",
-      "movieSummary": "John McClane attempts to avert disaster as rogue military operatives seize control of Dulles International Airport in Washington, D.C.",
-      "genre": "Action, Thriller"
-    },
-    {
-      "id": 1701879457696,
-      "title": "Troy",
+      "id": 1701884610386,
+      "title": "Shrek 2",
       "rating": "7.3",
-      "genre": "Drama",
-      "movieSummary": "An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved. try this edit"
+      "movieSummary": "Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.",
+      "genre": "Animation, Adventure, Comedy"
+    },
+    {
+      "id": 1701884616166,
+      "title": "Shrek the Third",
+      "rating": "6.1",
+      "movieSummary": "Reluctantly designated as the heir to the land of Far, Far Away, Shrek hatches a plan to install the rebellious Artie as the new king while Princess Fiona tries to fend off a coup d'état by the jilted Prince Charming.",
+      "genre": "Animation, Adventure, Comedy"
     }
   ]
 }
