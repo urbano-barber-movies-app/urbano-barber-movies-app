@@ -49,9 +49,7 @@ function createMovieCard(movie) {
         document.getElementById('editSummary').value = movie.movieSummary;
 
         // Add delete button to the edit form
-        const deleteButton = document.createElement('button');
-        deleteButton.className = 'btn btn-danger btn-delete';
-        deleteButton.textContent = 'Delete';
+        const deleteButton = document.getElementById("deleteButton")
 
         deleteButton.addEventListener('click', function () {
             const deleteIndex = moviesData.findIndex(item => item.title === movie.title);
@@ -79,7 +77,7 @@ function createMovieCard(movie) {
         });
 
         // Append delete button to the edit form
-        document.getElementById('editForm').appendChild(deleteButton);
+        // document.getElementById('editForm').appendChild(deleteButton);
 
         document.getElementById('editForm').style.display = 'block';
     });
