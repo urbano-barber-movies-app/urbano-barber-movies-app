@@ -271,19 +271,6 @@ function populateGenreDropdown() {
         });
 }
 
-// function performSearch() {
-//     const titleQuery = searchTitleInput.value.toLowerCase();
-//     const genreQuery = searchGenreDropdown.value.toLowerCase();
-//
-//     const filteredMovies = moviesData.filter(movie => {
-//         const titleMatch = movie.title.toLowerCase().includes(titleQuery);
-//         const genreMatch = genreQuery === '' || movie.genre.toLowerCase() === genreQuery;
-//         return titleMatch && genreMatch;
-//     });
-//
-//     updateDisplayedMovies(filteredMovies);
-// }
-
 // Function to search movies by title
 function searchByTitle(titleQuery) {
     const filteredMovies = moviesData.filter(movie => {
@@ -292,8 +279,26 @@ function searchByTitle(titleQuery) {
 
     updateDisplayedMovies(filteredMovies);
 }
+// Find the rating dropdown element
+const searchRatingDropdown = document.getElementById('searchRating');
 
-// Function to search movies by genre
+// Function to populate the rating dropdown with values from 1 to 10
+function populateRatingDropdown() {
+    // Create an array of rating values from 1 to 10
+    const ratingValues = Array.from({ length: 10 }, (_, i) => i + 1);
+
+    // Create HTML options for each rating value
+    const ratingOptions = ratingValues.map(value => {
+        return `<option value="${value}">${value}</option>`;
+    });
+
+    // Set the HTML of the rating dropdown
+    searchRatingDropdown.innerHTML = `<option value="">Any</option>${ratingOptions.join('')}`;
+}
+
+// Call the populateRatingDropdown function to populate the rating dropdown
+populateRatingDropdown();
+
 // Function to search movies by genre
 function searchByGenre(genreQuery) {
     const filteredMovies = moviesData.filter(movie => {
@@ -306,7 +311,6 @@ function searchByGenre(genreQuery) {
 
     updateDisplayedMovies(filteredMovies);
 }
-
 // Function to update displayed movies on the main page
 function updateDisplayedMovies(filteredMovies) {
     const movieListContainer = document.getElementById('movie-list-container');
@@ -323,22 +327,45 @@ function updateDisplayedMovies(filteredMovies) {
     }
 }
 // Event listeners
-// Event listeners
+
 searchButton.addEventListener('click', function () {
     const titleQuery = searchTitleInput.value.toLowerCase();
-    searchByTitle(titleQuery);
-});
-
-// Assuming you want to perform the genre search when the dropdown changes
-searchGenreDropdown.addEventListener('change', function () {
     const genreQuery = searchGenreDropdown.value.toLowerCase();
-    searchByGenre(genreQuery);
+    const ratingQuery = searchRatingDropdown.value;
+
+    const filteredMovies = moviesData.filter(movie => {
+        const titleMatch = movie.title.toLowerCase().includes(titleQuery);
+        const genreMatch = genreQuery === '' || movie.genre.toLowerCase().includes(genreQuery);
+        const ratingMatch = ratingQuery === '' || Math.floor(Number(movie.rating)) === Number(ratingQuery);
+
+        return titleMatch && genreMatch && ratingMatch;
+    });
+
+    updateDisplayedMovies(filteredMovies);
 });
 
-cancelSearchButton.addEventListener('click', () => {
-    // Reset the displayed movies to the full list when canceling the search
-    updateDisplayedMovies(moviesData);
+// Event listener for the "Cancel" button (to reset the displayed movies)
+// cancelSearchButton.addEventListener('click', function () {
+//     // Reset the displayed movies to the full list
+//     updateDisplayedMovies(moviesData);
+// });
+
+// Event listener for the "Rating" dropdown
+
+searchRatingDropdown.addEventListener('click', function () {
+    const ratingQuery = searchRatingDropdown.value;
+    searchByRating(ratingQuery);
 });
+
+// Function to search movies by rating
+function searchByRating(ratingQuery) {
+    const filteredMovies = moviesData.filter(movie => {
+        const movieRating = Math.floor(Number(movie.rating));
+        return ratingQuery === '' || movieRating === Number(ratingQuery);
+    });
+
+    updateDisplayedMovies(filteredMovies);
+}
 
 // Function to check if moviesData is not empty and then populate the genre dropdown
 function checkAndPopulateGenreDropdown() {
