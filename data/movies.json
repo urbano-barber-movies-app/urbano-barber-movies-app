@@ -17,7 +17,7 @@
     {
       "id": 3,
       "title": "The Dark Knight",
-      "rating": 9.0,
+      "rating": 9,
       "movieSummary": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
       "genre": "Action, Crime, Drama"
     },
@@ -87,7 +87,7 @@
     {
       "id": 13,
       "title": "The Dark Knight",
-      "rating": 9.0,
+      "rating": 9,
       "movieSummary": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
       "genre": "Action, Crime, Drama"
     },
@@ -195,7 +195,8 @@
       "rating": 8.5,
       "movieSummary": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
       "genre": "Crime, Drama, Mystery"
-    },{
+    },
+    {
       "id": 29,
       "title": "The Lion King",
       "rating": 8.5,
@@ -203,151 +204,158 @@
       "genre": "Animation, Adventure, Drama"
     },
     {
-  "id": 30,
-  "title": "Léon: The Professional",
-  "rating": 8.5,
-  "movieSummary": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade.",
-  "genre": "Action, Crime, Drama"
-},
-{
-"id": 31,
-"title": "Spirited Away",
-"rating": 8.6,
-"movieSummary": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
-"genre": "Animation, Adventure, Family"
-},
-{
-"id": 32,
-"title": "Gladiator",
-"rating": 8.5,
-"movieSummary": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-"genre": "Action, Adventure, Drama"
-},
-{
-"id": 33,
-"title": "The Intouchables",
-"rating": 8.5,
-"movieSummary": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
-"genre": "Biography, Comedy, Drama"
-},
-{
-"id": 34,
-"title": "American History X",
-"rating": 8.5,
-"movieSummary": "A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did.",
-"genre": "Drama"
-},
-{
-"id": 35,
-"title": "The Pianist",
-"rating": 8.5,
-"movieSummary": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
-"genre": "Biography, Drama, Music"
-},
-{
-"id": 36,
-"title": "The Departed",
-"rating": 8.5,
-"movieSummary": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
-"genre": "Crime, Drama, Thriller"
-},
-{
-"id": 37,
-"title": "Whiplash",
-"rating": 8.5,
-"movieSummary": "A promising young drummer enrolls at a cutthroat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
-"genre": "Drama, Music"
-},
-{
-"id": 38,
-"title": "Gladiator",
-"rating": 8.5,
-"movieSummary": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-"genre": "Action, Adventure, Drama"
-},
-{
-"id": 39,
-"title": "The Dark Knight Rises",
-"rating": 8.4,
-"movieSummary": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
-"genre": "Action, Adventure"
-},
-{
-"id": 40,
-"title": "Princess Mononoke",
-"rating": 8.4,
-"movieSummary": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest, he also meets San, the Mononoke Hime.",
-"genre": "Animation, Action, Adventure"
-},
-{
-"id": 41,
-"title": "Once Upon a Time in America",
-"rating": 8.4,
-"movieSummary": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
-"genre": "Crime, Drama"
-},
-{
-"id": 42,
-"title": "The Lives of Others",
-"rating": 8.4,
-"movieSummary": "In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives.",
-"genre": "Drama, Mystery, Thriller"
-},
-{
-"id": 43,
-"title": "Cinema Paradiso",
-"rating": 8.5,
-"movieSummary": "A filmmaker recalls his childhood when falling in love with the pictures at the cinema of his home village and forms a deep friendship with the cinema's projectionist.",
-"genre": "Drama"
-},
-{
-"id": 44,
-"title": "Paths of Glory",
-"rating": 8.4,
-"movieSummary": "After refusing to attack an enemy position, a general accuses the soldiers of cowardice and their commanding officer must defend them.",
-"genre": "Drama, War"
-},
-{
-"id": 45,
-"title": "American Beauty",
-"rating": 8.3,
-"movieSummary": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
-"genre": "Drama"
-},
-{
-"id": 46,
-"title": "The Shining",
-"rating": 8.4,
-"movieSummary": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
-"genre": "Drama, Horror"
-},
-{
-"id": 47,
-"title": "WALL·E",
-"rating": 8.4,
-"movieSummary": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of humanity.",
-"genre": "Animation, Adventure, Family"
-},
-{
-"id": 48,
-"title": "The Green Mile",
-"rating": 8.6,
-"movieSummary": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
-"genre": "Crime, Drama, Fantasy"
-},
-{
-"id": 49,
-"title": "The Usual Suspects",
-"rating": 8.5,
-"movieSummary": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
-"genre": "Crime, Drama, Mystery"
-},
-{
-"id": 50,
-"title": "Leon: The Professional",
-"rating": 8.5,
-"movieSummary": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade.",
-"genre": "Action, Crime, Drama"
-}
-]
+      "id": 30,
+      "title": "Léon: The Professional",
+      "rating": 8.5,
+      "movieSummary": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade.",
+      "genre": "Action, Crime, Drama"
+    },
+    {
+      "id": 31,
+      "title": "Spirited Away",
+      "rating": 8.6,
+      "movieSummary": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+      "genre": "Animation, Adventure, Family"
+    },
+    {
+      "id": 32,
+      "title": "Gladiator",
+      "rating": 8.5,
+      "movieSummary": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "genre": "Action, Adventure, Drama"
+    },
+    {
+      "id": 33,
+      "title": "The Intouchables",
+      "rating": 8.5,
+      "movieSummary": "After he becomes a quadriplegic from a paragliding accident, an aristocrat hires a young man from the projects to be his caregiver.",
+      "genre": "Biography, Comedy, Drama"
+    },
+    {
+      "id": 34,
+      "title": "American History X",
+      "rating": 8.5,
+      "movieSummary": "A former neo-nazi skinhead tries to prevent his younger brother from going down the same wrong path that he did.",
+      "genre": "Drama"
+    },
+    {
+      "id": 35,
+      "title": "The Pianist",
+      "rating": 8.5,
+      "movieSummary": "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
+      "genre": "Biography, Drama, Music"
+    },
+    {
+      "id": 36,
+      "title": "The Departed",
+      "rating": 8.5,
+      "movieSummary": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
+      "genre": "Crime, Drama, Thriller"
+    },
+    {
+      "id": 37,
+      "title": "Whiplash",
+      "rating": 8.5,
+      "movieSummary": "A promising young drummer enrolls at a cutthroat music conservatory where his dreams of greatness are mentored by an instructor who will stop at nothing to realize a student's potential.",
+      "genre": "Drama, Music"
+    },
+    {
+      "id": 38,
+      "title": "Gladiator",
+      "rating": 8.5,
+      "movieSummary": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "genre": "Action, Adventure, Drama"
+    },
+    {
+      "id": 39,
+      "title": "The Dark Knight Rises",
+      "rating": 8.4,
+      "movieSummary": "Eight years after the Joker's reign of anarchy, Batman, with the help of the enigmatic Catwoman, is forced from his exile to save Gotham City from the brutal guerrilla terrorist Bane.",
+      "genre": "Action, Adventure"
+    },
+    {
+      "id": 40,
+      "title": "Princess Mononoke",
+      "rating": 8.4,
+      "movieSummary": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest, he also meets San, the Mononoke Hime.",
+      "genre": "Animation, Action, Adventure"
+    },
+    {
+      "id": 41,
+      "title": "Once Upon a Time in America",
+      "rating": 8.4,
+      "movieSummary": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
+      "genre": "Crime, Drama"
+    },
+    {
+      "id": 42,
+      "title": "The Lives of Others",
+      "rating": 8.4,
+      "movieSummary": "In 1984 East Berlin, an agent of the secret police, conducting surveillance on a writer and his lover, finds himself becoming increasingly absorbed by their lives.",
+      "genre": "Drama, Mystery, Thriller"
+    },
+    {
+      "id": 43,
+      "title": "Cinema Paradiso",
+      "rating": 8.5,
+      "movieSummary": "A filmmaker recalls his childhood when falling in love with the pictures at the cinema of his home village and forms a deep friendship with the cinema's projectionist.",
+      "genre": "Drama"
+    },
+    {
+      "id": 44,
+      "title": "Paths of Glory",
+      "rating": 8.4,
+      "movieSummary": "After refusing to attack an enemy position, a general accuses the soldiers of cowardice and their commanding officer must defend them.",
+      "genre": "Drama, War"
+    },
+    {
+      "id": 45,
+      "title": "American Beauty",
+      "rating": 8.3,
+      "movieSummary": "A sexually frustrated suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.",
+      "genre": "Drama"
+    },
+    {
+      "id": 46,
+      "title": "The Shining",
+      "rating": 8.4,
+      "movieSummary": "A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.",
+      "genre": "Drama, Horror"
+    },
+    {
+      "id": 47,
+      "title": "WALL·E",
+      "rating": 8.4,
+      "movieSummary": "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of humanity.",
+      "genre": "Animation, Adventure, Family"
+    },
+    {
+      "id": 48,
+      "title": "The Green Mile",
+      "rating": 8.6,
+      "movieSummary": "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+      "genre": "Crime, Drama, Fantasy"
+    },
+    {
+      "id": 49,
+      "title": "The Usual Suspects",
+      "rating": 8.5,
+      "movieSummary": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+      "genre": "Crime, Drama, Mystery"
+    },
+    {
+      "id": 50,
+      "title": "Leon: The Professional",
+      "rating": 8.5,
+      "movieSummary": "Mathilda, a 12-year-old girl, is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade.",
+      "genre": "Action, Crime, Drama"
+    },
+    {
+      "id": 1701875051356,
+      "title": "Shrek",
+      "rating": "7.9",
+      "movieSummary": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
+      "genre": "Animation, Adventure, Comedy"
+    }
+  ]
 }
