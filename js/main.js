@@ -271,14 +271,37 @@ function populateGenreDropdown() {
         });
 }
 
-function performSearch() {
-    const titleQuery = searchTitleInput.value.toLowerCase();
-    const genreQuery = searchGenreDropdown.value.toLowerCase();
+// function performSearch() {
+//     const titleQuery = searchTitleInput.value.toLowerCase();
+//     const genreQuery = searchGenreDropdown.value.toLowerCase();
+//
+//     const filteredMovies = moviesData.filter(movie => {
+//         const titleMatch = movie.title.toLowerCase().includes(titleQuery);
+//         const genreMatch = genreQuery === '' || movie.genre.toLowerCase() === genreQuery;
+//         return titleMatch && genreMatch;
+//     });
+//
+//     updateDisplayedMovies(filteredMovies);
+// }
 
+// Function to search movies by title
+function searchByTitle(titleQuery) {
     const filteredMovies = moviesData.filter(movie => {
-        const titleMatch = movie.title.toLowerCase().includes(titleQuery);
-        const genreMatch = genreQuery === '' || movie.genre.toLowerCase() === genreQuery;
-        return titleMatch && genreMatch;
+        return movie.title.toLowerCase().includes(titleQuery.toLowerCase());
+    });
+
+    updateDisplayedMovies(filteredMovies);
+}
+
+// Function to search movies by genre
+// Function to search movies by genre
+function searchByGenre(genreQuery) {
+    const filteredMovies = moviesData.filter(movie => {
+        // Split the movie's genres into an array
+        const movieGenres = movie.genre.toLowerCase().split(', ');
+
+        // Check if any of the genres match the query
+        return genreQuery === '' || movieGenres.some(genre => genre.includes(genreQuery.toLowerCase()));
     });
 
     updateDisplayedMovies(filteredMovies);
@@ -300,7 +323,18 @@ function updateDisplayedMovies(filteredMovies) {
     }
 }
 // Event listeners
-searchButton.addEventListener('click', performSearch);
+// Event listeners
+searchButton.addEventListener('click', function () {
+    const titleQuery = searchTitleInput.value.toLowerCase();
+    searchByTitle(titleQuery);
+});
+
+// Assuming you want to perform the genre search when the dropdown changes
+searchGenreDropdown.addEventListener('change', function () {
+    const genreQuery = searchGenreDropdown.value.toLowerCase();
+    searchByGenre(genreQuery);
+});
+
 cancelSearchButton.addEventListener('click', () => {
     // Reset the displayed movies to the full list when canceling the search
     updateDisplayedMovies(moviesData);
