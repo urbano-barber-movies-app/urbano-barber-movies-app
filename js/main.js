@@ -1,7 +1,7 @@
 // main.js
 
 const API_KEY = '4f538816';
-let moviesData; // Store movies data globally
+let moviesData = []; // Initialize moviesData as an empty array globally
 
 // Function to create a movie card
 function createMovieCard(movie) {
@@ -148,6 +148,7 @@ document.getElementById('saveEdit').addEventListener('click', function () {
         rating: document.getElementById('editRating').value,
         genre: document.getElementById('editGenre').value,
         movieSummary: document.getElementById('editSummary').value,
+        // checkAndPopulateGenreDropdown(),
     };
 
     const editedIndex = moviesData.findIndex(movie => movie.title === editedMovie.title);
@@ -241,3 +242,76 @@ addMovieForm.addEventListener('submit', function (event) {
 
     addMovieForm.reset();
 });
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+
+darkModeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode', darkModeToggle.checked);
+});
+
+//search functions
+const searchTitleInput = document.getElementById('searchTitle');
+const searchGenreDropdown = document.getElementById('searchGenre');
+const searchButton = document.getElementById('searchButton');
+const searchResultsPopup = document.getElementById('searchResultsPopup');
+const cancelSearchButton = document.getElementById('cancelSearch');
+
+// Function to populate genres in the dropdown
+function populateGenreDropdown() {
+    // Fetch the genres from the JSON file
+    fetch('data/genres.json')
+        .then(response => response.json())
+        .then(data => {
+            const uniqueGenres = data.genres;
+            const dropdownOptions = uniqueGenres.map(genre => `<option value="${genre}">${genre}</option>`).join('');
+            searchGenreDropdown.innerHTML = `<option value="">All Genres</option>${dropdownOptions}`;
+        })
+        .catch(error => {
+            console.error('Error fetching genres data:', error.message);
+        });
+}
+
+function performSearch() {
+    const titleQuery = searchTitleInput.value.toLowerCase();
+    const genreQuery = searchGenreDropdown.value.toLowerCase();
+
+    const filteredMovies = moviesData.filter(movie => {
+        const titleMatch = movie.title.toLowerCase().includes(titleQuery);
+        const genreMatch = genreQuery === '' || movie.genre.toLowerCase() === genreQuery;
+        return titleMatch && genreMatch;
+    });
+
+    updateDisplayedMovies(filteredMovies);
+}
+
+// Function to update displayed movies on the main page
+function updateDisplayedMovies(filteredMovies) {
+    const movieListContainer = document.getElementById('movie-list-container');
+    movieListContainer.innerHTML = ''; // Clear existing movies
+
+    if (filteredMovies.length === 0) {
+        const noResultsMessage = document.createElement('p');
+        noResultsMessage.textContent = 'No results found.';
+        movieListContainer.appendChild(noResultsMessage);
+    } else {
+        filteredMovies.forEach(movie => {
+            createMovieCard(movie);
+        });
+    }
+}
+// Event listeners
+searchButton.addEventListener('click', performSearch);
+cancelSearchButton.addEventListener('click', () => {
+    // Reset the displayed movies to the full list when canceling the search
+    updateDisplayedMovies(moviesData);
+});
+
+// Function to check if moviesData is not empty and then populate the genre dropdown
+function checkAndPopulateGenreDropdown() {
+    if (moviesData.length > 0) {
+        // Call the function to populate genres in the dropdown
+        populateGenreDropdown();
+    }
+}
+// Call the function to populate genres in the dropdown
+populateGenreDropdown();

@@ -8,13 +8,6 @@
       "genre": "Animation, Adventure, Comedy"
     },
     {
-      "id": 1701884602597,
-      "title": "Cars 2",
-      "rating": "6.2",
-      "movieSummary": "Star race car Lightning McQueen and his pal Mater head overseas to compete in the World Grand Prix race. But the road to the championship becomes rocky as Mater gets caught up in an intriguing adventure of his own: international e...",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
       "id": 1701884604900,
       "title": "Cars 3",
       "rating": "6.7",
@@ -41,6 +34,20 @@
       "rating": "6.1",
       "movieSummary": "Reluctantly designated as the heir to the land of Far, Far Away, Shrek hatches a plan to install the rebellious Artie as the new king while Princess Fiona tries to fend off a coup d'état by the jilted Prince Charming.",
       "genre": "Animation, Adventure, Comedy"
+    },
+    {
+      "id": 1701890321988,
+      "title": "Die Hard",
+      "rating": "8.2",
+      "movieSummary": "A New York City police officer tries to save his estranged wife and several others taken hostage by terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
+      "genre": "Action, Thriller"
+    },
+    {
+      "id": 1701891187413,
+      "title": "300",
+      "rating": "7.6",
+      "movieSummary": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+      "genre": "Action, Drama"
     }
   ]
 }
