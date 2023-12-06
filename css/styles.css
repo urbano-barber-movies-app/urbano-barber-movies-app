@@ -10,19 +10,24 @@ body {
     position: relative;
     overflow: hidden;
 }
+#movie-list-container{
+    margin:auto ;
+    display: flex;
+    justify-content: center;
+}
 
 /* Style the summary container */
 .summary-container {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0.9); /* Use an rgba color with opacity */
-    overflow: hidden;
-    transition: transform 0.3s ease; /* Transition for the sliding effect */
-    transform: translateY(50%); /* Initially, hide the summary off-screen */
-    z-index: 1; /* Ensure the overlay appears above the poster */
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    width: 100%;*/
+/*    height: 50%;*/
+/*    background-color: rgba(255, 255, 255, 0.9); !* Use an rgba color with opacity *!*/
+/*    overflow: hidden;*/
+/*    transition: transform 0.3s ease; !* Transition for the sliding effect *!*/
+/*    transform: translateY(50%); !* Initially, hide the summary off-screen *!*/
+/*    z-index: 1; !* Ensure the overlay appears above the poster *!*/
 }
 
 /* Style the summary text */
@@ -36,9 +41,9 @@ body {
 .summary-text {
     display: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 120px;
+    left: 12px;
+    width: 92%;
     height: 50%;
     background-color: rgba(0, 0, 0, 0.8); /* Adjust the background color and opacity as needed */
     color: white;
