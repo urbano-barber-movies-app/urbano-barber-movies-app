@@ -115,6 +115,24 @@ function createMovieCard(movie) {
     });
 }
 
+// Function to update the UI with edited information
+function updateMovieCardUI(index, editedMovie) {
+    const movieListContainer = document.getElementById('movie-list-container');
+    const card = movieListContainer.children[index];
+    if (card) {
+        const titleElement = card.querySelector('.card-title');
+        const genreElement = card.querySelector('.card-text:nth-child(2)');
+        const ratingElement = card.querySelector('.card-text:nth-child(3)');
+        const summaryText = card.querySelector('.summary-text');
+
+        // Update DOM elements with edited information
+        titleElement.textContent = editedMovie.title;
+        genreElement.textContent = `Genre: ${editedMovie.genre}`;
+        ratingElement.textContent = `Rating: ${editedMovie.rating}`;
+        summaryText.textContent = `Summary: ${editedMovie.movieSummary}`;
+    }
+}
+
 // Fetch movies data from the JSON file
 fetch('http://localhost:3000/movies')
     .then(response => {
@@ -134,8 +152,10 @@ fetch('http://localhost:3000/movies')
     });
 
 // Event listener for the "Save" button in the edit form
+// Event listener for the "Save" button in the edit form
 document.getElementById('saveEdit').addEventListener('click', function () {
     const editedMovie = {
+        id: moviesData.find(movie => movie.title === document.getElementById('editTitle').value).id,
         title: document.getElementById('editTitle').value,
         rating: document.getElementById('editRating').value,
         genre: document.getElementById('editGenre').value,
@@ -145,8 +165,6 @@ document.getElementById('saveEdit').addEventListener('click', function () {
     const editedIndex = moviesData.findIndex(movie => movie.title === editedMovie.title);
 
     if (editedIndex !== -1) {
-        moviesData[editedIndex] = editedMovie;
-
         const jsonServerUrl = `http://localhost:3000/movies/${editedMovie.id}`;
         fetch(jsonServerUrl, {
             method: 'PUT',
@@ -158,12 +176,15 @@ document.getElementById('saveEdit').addEventListener('click', function () {
             .then(response => response.json())
             .then(data => {
                 console.log('Movie updated on the local JSON server:', data);
+
+                // Update the UI with the edited information
+                updateMovieCardUI(editedIndex, editedMovie);
             })
             .catch(error => {
                 console.error('Error updating movie on the local JSON server:', error.message);
             });
     }
-
+    // Hide the edit form
     document.getElementById('editForm').style.display = 'none';
 });
 

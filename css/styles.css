@@ -14,6 +14,11 @@ body {
     margin:auto ;
     display: flex;
     justify-content: center;
+
+}
+
+.movie-header{
+    text-align: center;
 }
 
 /* Style the summary container */
