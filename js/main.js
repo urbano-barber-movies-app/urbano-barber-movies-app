@@ -139,6 +139,7 @@ function createMovieCard(movie) {
 }
 
 // Function to fetch movies data from the JSON file and create movie cards
+// Function to fetch movies data from the JSON file and create movie cards
 function fetchMoviesAndCreateCards() {
     fetch('http://localhost:3000/movies')
         .then(response => {
@@ -156,10 +157,13 @@ function fetchMoviesAndCreateCards() {
                 const loadingScreen = document.querySelector('.loading-center');
                 loadingScreen.style.display = 'none';
 
+                // Show the page selector
                 const pageSelector = document.querySelector('.text-center');
-                pageSelector.style.display = 'block'
+                pageSelector.style.display = 'block';
 
-                moviesData.forEach(movie => {
+                // Create movie cards for the first 9 movies (1st page)
+                const moviesToDisplay = moviesData.slice(0, 9);
+                moviesToDisplay.forEach(movie => {
                     createMovieCard(movie);
                 });
             }, 3000); // 3000 milliseconds = 3 seconds
@@ -376,6 +380,7 @@ searchButton.addEventListener('click', function () {
     });
 
     updateDisplayedMovies(filteredMovies);
+    currentPage = 1; // Reset currentPage to 1
 });
 
 
@@ -445,9 +450,10 @@ sortSelect.addEventListener('change', function () {
     }
 
     // Update the displayed movies based on the sorted moviesData
-    updateDisplayedMovies(moviesData);
-});
+    updateDisplayedMoviesPage(); // Call the function to update displayed movies respecting the pagination
 
+
+});
 // Call the function to populate genres in the dropdown
 populateGenreDropdown();
 

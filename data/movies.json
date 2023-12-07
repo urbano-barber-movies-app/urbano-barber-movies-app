@@ -111,6 +111,622 @@
       "movieSummary": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
       "genre": "Action, Drama",
       "runtime": "117 min"
+    },
+    {
+      "id": 1701983031561,
+      "title": "The Shawshank Redemption",
+      "rating": "9.3",
+      "movieSummary": "Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.",
+      "genre": "Drama",
+      "runtime": "142 min"
+    },
+    {
+      "id": 1701983039168,
+      "title": "The Godfather",
+      "rating": "9.2",
+      "movieSummary": "Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.",
+      "genre": "Crime, Drama",
+      "runtime": "175 min"
+    },
+    {
+      "id": 1701983045367,
+      "title": "The Dark Knight",
+      "rating": "9.0",
+      "movieSummary": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "genre": "Action, Crime, Drama",
+      "runtime": "152 min"
+    },
+    {
+      "id": 1701983051849,
+      "title": "Pulp Fiction",
+      "rating": "8.9",
+      "movieSummary": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "genre": "Crime, Drama",
+      "runtime": "154 min"
+    },
+    {
+      "id": 1701983058971,
+      "title": "Schindler's List",
+      "rating": "9.0",
+      "movieSummary": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "genre": "Biography, Drama, History",
+      "runtime": "195 min"
+    },
+    {
+      "id": 1701983068787,
+      "title": "Fight Club",
+      "rating": "8.8",
+      "movieSummary": "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+      "genre": "Drama",
+      "runtime": "139 min"
+    },
+    {
+      "id": 1701983076078,
+      "title": "Forrest Gump",
+      "rating": "8.8",
+      "movieSummary": "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
+      "genre": "Drama, Romance",
+      "runtime": "142 min"
+    },
+    {
+      "id": 1701983083268,
+      "title": "Inception",
+      "rating": "8.8",
+      "movieSummary": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "runtime": "148 min"
+    },
+    {
+      "id": 1701983104514,
+      "title": "The Matrix",
+      "rating": "8.7",
+      "movieSummary": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+      "genre": "Action, Sci-Fi",
+      "runtime": "136 min"
+    },
+    {
+      "id": 1701983112147,
+      "title": "The Lord of the Rings: The Return of the King",
+      "rating": "9.0",
+      "movieSummary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+      "genre": "Action, Adventure, Drama",
+      "runtime": "201 min"
+    },
+    {
+      "id": 1701983199662,
+      "title": "The Phantom Menace",
+      "rating": "7.3",
+      "movieSummary": "The day after suffering a miscarriage, a young couple attend their local comic con.",
+      "genre": "Short, Romance",
+      "runtime": "N/A"
+    },
+    {
+      "id": 1701983203957,
+      "title": "Attack of the Clones",
+      "rating": "N/A",
+      "movieSummary": "N/A",
+      "genre": "Short, Sci-Fi",
+      "runtime": "3 min"
+    },
+    {
+      "id": 1701983212671,
+      "title": "Revenge of the Sith",
+      "rating": "N/A",
+      "movieSummary": "Isac thinks that Edvin has taken all the money from their youtube channel. But Edvin denies, they start arguing and everything ends in a fight with laser swords! (The serie is on youtube: Korta Sketcher)",
+      "genre": "Action, Drama, Sci-Fi",
+      "runtime": "N/A"
+    },
+    {
+      "id": 1701983246291,
+      "title": "Gladiator",
+      "rating": "8.5",
+      "movieSummary": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+      "genre": "Action, Adventure, Drama",
+      "runtime": "155 min"
+    },
+    {
+      "id": 1701983267303,
+      "title": "The Silence of the Lambs",
+      "rating": "8.6",
+      "movieSummary": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "genre": "Crime, Drama, Thriller",
+      "runtime": "118 min"
+    },
+    {
+      "id": 1701983371046,
+      "title": "Braveheart",
+      "rating": "8.3",
+      "movieSummary": "Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.",
+      "genre": "Biography, Drama, History",
+      "runtime": "178 min"
+    },
+    {
+      "id": 1701983378234,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "rating": "8.8",
+      "movieSummary": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "genre": "Action, Adventure, Drama",
+      "runtime": "178 min"
+    },
+    {
+      "id": 1701983385958,
+      "title": "The Lord of the Rings: The Two Towers",
+      "rating": "8.8",
+      "movieSummary": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "genre": "Action, Adventure, Drama",
+      "runtime": "179 min"
+    },
+    {
+      "id": 1701983392250,
+      "title": "The Hobbit: An Unexpected Journey",
+      "rating": "7.8",
+      "movieSummary": "A reluctant Hobbit, Bilbo Baggins, sets out to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home, and the gold within it from the dragon Smaug.",
+      "genre": "Adventure, Fantasy",
+      "runtime": "169 min"
+    },
+    {
+      "id": 1701983397869,
+      "title": "The Hobbit: The Desolation of Smaug",
+      "rating": "7.8",
+      "movieSummary": "The dwarves, along with Bilbo Baggins and Gandalf the Grey, continue their quest to reclaim Erebor, their homeland, from Smaug. Bilbo Baggins is in possession of a mysterious and magical ring.",
+      "genre": "Adventure, Drama, Fantasy",
+      "runtime": "161 min"
+    },
+    {
+      "id": 1701983404997,
+      "title": "The Hobbit: The Battle of the Five Armies",
+      "rating": "7.4",
+      "movieSummary": "Bilbo and company are forced to engage in a war against an array of combatants and keep the Lonely Mountain from falling into the hands of a rising darkness.",
+      "genre": "Adventure, Fantasy",
+      "runtime": "144 min"
+    },
+    {
+      "id": 1701983412785,
+      "title": "The Avengers",
+      "rating": "8.0",
+      "movieSummary": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "genre": "Action, Sci-Fi",
+      "runtime": "143 min"
+    },
+    {
+      "id": 1701983419429,
+      "title": "Avengers: Age of Ultron",
+      "rating": "7.3",
+      "movieSummary": "When Tony Stark and Bruce Banner try to jump-start a dormant peacekeeping program called Ultron, things go horribly wrong and it's up to Earth's mightiest heroes to stop the villainous Ultron from enacting his terrible plan.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "runtime": "141 min"
+    },
+    {
+      "id": 1701983426742,
+      "title": "Avengers: Infinity War",
+      "rating": "8.4",
+      "movieSummary": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "runtime": "149 min"
+    },
+    {
+      "id": 1701983434050,
+      "title": "Avengers: Endgame",
+      "rating": "8.4",
+      "movieSummary": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+      "genre": "Action, Adventure, Drama",
+      "runtime": "181 min"
+    },
+    {
+      "id": 1701983440369,
+      "title": "Jurassic Park",
+      "rating": "8.2",
+      "movieSummary": "A pragmatic paleontologist touring an almost complete theme park on an island in Central America is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "runtime": "127 min"
+    },
+    {
+      "id": 1701983446975,
+      "title": "The Making of 'Jurassic Park: The Lost World'",
+      "rating": "7.1",
+      "movieSummary": "N/A",
+      "genre": "Sci-Fi, Short, Documentary",
+      "runtime": "13 min"
+    },
+    {
+      "id": 1701983453718,
+      "title": "Jurassic Park III",
+      "rating": "5.9",
+      "movieSummary": "A decidedly odd couple with ulterior motives convince Dr. Grant to go to Isla Sorna for a holiday, but their unexpected landing startles the island's new inhabitants.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "runtime": "92 min"
+    },
+    {
+      "id": 1701983458949,
+      "title": "Jurassic World",
+      "rating": "6.9",
+      "movieSummary": "A new theme park, built on the original site of Jurassic Park, creates a genetically modified hybrid dinosaur, the Indominus Rex, which escapes containment and goes on a killing spree.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "runtime": "124 min"
+    },
+    {
+      "id": 1701983469378,
+      "title": "Jurassic World: Fallen Kingdom",
+      "rating": "6.1",
+      "movieSummary": "When the island's dormant volcano begins roaring to life, Owen and Claire mount a campaign to rescue the remaining dinosaurs from this extinction-level event.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "runtime": "128 min"
+    },
+    {
+      "id": 1701983474951,
+      "title": "Titanic",
+      "rating": "7.9",
+      "movieSummary": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+      "genre": "Drama, Romance",
+      "runtime": "194 min"
+    },
+    {
+      "id": 1701983481920,
+      "title": "Avatar",
+      "rating": "7.9",
+      "movieSummary": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+      "genre": "Action, Adventure, Fantasy",
+      "runtime": "162 min"
+    },
+    {
+      "id": 1701983495906,
+      "title": "The Lion King",
+      "rating": "8.5",
+      "movieSummary": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+      "genre": "Animation, Adventure, Drama",
+      "runtime": "88 min"
+    },
+    {
+      "id": 1701983502336,
+      "title": "Finding Nemo",
+      "rating": "8.2",
+      "movieSummary": "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "100 min"
+    },
+    {
+      "id": 1701983508839,
+      "title": "Toy Story",
+      "rating": "8.3",
+      "movieSummary": "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's bedroom.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "81 min"
+    },
+    {
+      "id": 1701983514156,
+      "title": "Toy Story 2",
+      "rating": "7.9",
+      "movieSummary": "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save Woody before he becomes a museum toy property with his roundup gang Jessie, Prospector, and Bullseye.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "92 min"
+    },
+    {
+      "id": 1701983519415,
+      "title": "Toy Story 3",
+      "rating": "8.3",
+      "movieSummary": "The toys are mistakenly delivered to a day-care center instead of the attic right before Andy leaves for college, and it's up to Woody to convince the other toys that they weren't abandoned and to return home.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "103 min"
+    },
+    {
+      "id": 1701983525151,
+      "title": "Toy Story 4",
+      "rating": "7.7",
+      "movieSummary": "When a new toy called \"Forky\" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "100 min"
+    },
+    {
+      "id": 1701983532230,
+      "title": "Frozen",
+      "rating": "7.4",
+      "movieSummary": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather co...",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "102 min"
+    },
+    {
+      "id": 1701983538386,
+      "title": "Frozen II",
+      "rating": "6.8",
+      "movieSummary": "Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "103 min"
+    },
+    {
+      "id": 1701983554489,
+      "title": "Zootopia",
+      "rating": "8.0",
+      "movieSummary": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "108 min"
+    },
+    {
+      "id": 1701983560622,
+      "title": "Moana",
+      "rating": "7.6",
+      "movieSummary": "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "107 min"
+    },
+    {
+      "id": 1701983566439,
+      "title": "The Little Mermaid",
+      "rating": "7.6",
+      "movieSummary": "A mermaid princess makes a Faustian bargain in an attempt to become human and win a prince's love.",
+      "genre": "Animation, Adventure, Family",
+      "runtime": "83 min"
+    },
+    {
+      "id": 1701983573161,
+      "title": "Aladdin",
+      "rating": "8.0",
+      "movieSummary": "A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "90 min"
+    },
+    {
+      "id": 1701983579980,
+      "title": "Beauty and the Beast",
+      "rating": "8.0",
+      "movieSummary": "A prince cursed to spend his days as a hideous monster sets out to regain his humanity by earning a young woman's love.",
+      "genre": "Animation, Family, Fantasy",
+      "runtime": "84 min"
+    },
+    {
+      "id": 1701983585318,
+      "title": "Mulan",
+      "rating": "7.6",
+      "movieSummary": "To save her father from death in the army, a young maiden secretly goes in his place and becomes one of China's greatest heroines in the process.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "87 min"
+    },
+    {
+      "id": 1701983590823,
+      "title": "The Incredibles",
+      "rating": "8.0",
+      "movieSummary": "While trying to lead a quiet suburban life, a family of undercover superheroes are forced into action to save the world.",
+      "genre": "Animation, Action, Adventure",
+      "runtime": "115 min"
+    },
+    {
+      "id": 1701983604277,
+      "title": "Inside Out",
+      "rating": "8.1",
+      "movieSummary": "After young Riley is uprooted from her Midwest life and moved to San Francisco, her emotions - Joy, Fear, Anger, Disgust, and Sadness - conflict on how best to navigate a new city, house, and school.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "95 min"
+    },
+    {
+      "id": 1701983611070,
+      "title": "Coco",
+      "rating": "8.4",
+      "movieSummary": "Aspiring musician Miguel, confronted with his family's ancestral ban on music, enters the Land of the Dead to find his great-great-grandfather, a legendary singer.",
+      "genre": "Animation, Adventure, Drama",
+      "runtime": "105 min"
+    },
+    {
+      "id": 1701983618580,
+      "title": "Shrek the Third",
+      "rating": "6.1",
+      "movieSummary": "Reluctantly designated as the heir to the land of Far, Far Away, Shrek hatches a plan to install the rebellious Artie as the new king while Princess Fiona tries to fend off a coup d'état by the jilted Prince Charming.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "93 min"
+    },
+    {
+      "id": 1701983623890,
+      "title": "Shrek Forever After",
+      "rating": "6.3",
+      "movieSummary": "Rumpelstiltskin tricks a mid-life crisis burdened Shrek into allowing himself to be erased from existence and cast in a dark alternate timeline where Rumpelstiltskin rules supreme.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "95 min"
+    },
+    {
+      "id": 1701983629920,
+      "title": "Despicable Me",
+      "rating": "7.6",
+      "movieSummary": "When a criminal mastermind uses a trio of orphan girls as pawns for a grand scheme, he finds their love is profoundly changing him for the better.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "95 min"
+    },
+    {
+      "id": 1701983635254,
+      "title": "Despicable Me 2",
+      "rating": "7.3",
+      "movieSummary": "When Gru, the world's most super-bad turned super-dad has been recruited by a team of officials to stop lethal muscle and a host of Gru's own, He has to fight back with new gadgetry, cars, and more minion madness.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "98 min"
+    },
+    {
+      "id": 1701983642958,
+      "title": "Minions",
+      "rating": "6.4",
+      "movieSummary": "Minions Stuart, Kevin, and Bob are recruited by Scarlet Overkill, a supervillain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "91 min"
+    },
+    {
+      "id": 1701983651742,
+      "title": "The SpongeBob SquarePants Movie",
+      "rating": "7.1",
+      "movieSummary": "SpongeBob SquarePants takes leave from the town of Bikini Bottom in order to track down King Neptune's stolen crown.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "87 min"
+    },
+    {
+      "id": 1701983659330,
+      "title": "The SpongeBob Movie: Sponge Out of Water",
+      "rating": "6.0",
+      "movieSummary": "When a diabolical pirate above the sea steals the secret Krabby Patty formula, SpongeBob and his nemesis Plankton must team up in order to get it back.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "92 min"
+    },
+    {
+      "id": 1701983665252,
+      "title": "The SpongeBob Movie: Sponge on the Run",
+      "rating": "5.9",
+      "movieSummary": "After SpongeBob's beloved pet snail Gary is snail-napped, he and Patrick embark on an epic adventure to The Lost City of Atlantic City to bring Gary home.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "91 min"
+    },
+    {
+      "id": 1701983789701,
+      "title": "Cinderella",
+      "rating": "6.9",
+      "movieSummary": "When her father unexpectedly dies, young Ella finds herself at the mercy of her cruel stepmother and her scheming stepsisters. Never one to give up hope, Ella's fortunes begin to change after meeting a dashing stranger.",
+      "genre": "Adventure, Drama, Family",
+      "runtime": "105 min"
+    },
+    {
+      "id": 1701983812121,
+      "title": "Maleficent",
+      "rating": "6.9",
+      "movieSummary": "A vengeful fairy is driven to curse an infant princess, only to discover that the child could be the one person who can restore peace to their troubled land.",
+      "genre": "Adventure, Family, Fantasy",
+      "runtime": "97 min"
+    },
+    {
+      "id": 1701983817354,
+      "title": "Maleficent: Mistress of Evil",
+      "rating": "6.6",
+      "movieSummary": "Maleficent and her goddaughter Aurora begin to question the complex family ties that bind them as they are pulled in different directions by impending nuptials, unexpected allies, and dark new forces at play.",
+      "genre": "Adventure, Family, Fantasy",
+      "runtime": "119 min"
+    },
+    {
+      "id": 1701983823406,
+      "title": "Snow White and the Seven Dwarfs",
+      "rating": "7.6",
+      "movieSummary": "Exiled into the dangerous forest by her wicked stepmother, a princess is rescued by seven dwarf miners who make her part of their household.",
+      "genre": "Animation, Adventure, Family",
+      "runtime": "83 min"
+    },
+    {
+      "id": 1701983828605,
+      "title": "Sleeping Beauty",
+      "rating": "7.2",
+      "movieSummary": "After being snubbed by the royal family, a malevolent fairy places a curse on a princess which only a prince can break, along with the help of three good fairies.",
+      "genre": "Animation, Adventure, Family",
+      "runtime": "75 min"
+    },
+    {
+      "id": 1701983837913,
+      "title": "Alice in Wonderland",
+      "rating": "6.4",
+      "movieSummary": "Nineteen-year-old Alice returns to the magical world from her childhood adventure, where she reunites with her old friends and learns of her true destiny: to end the Red Queen's reign of terror.",
+      "genre": "Adventure, Family, Fantasy",
+      "runtime": "108 min"
+    },
+    {
+      "id": 1701983843188,
+      "title": "Peter Pan",
+      "rating": "7.3",
+      "movieSummary": "Wendy and her brothers are whisked away to the magical world of Neverland with the hero of their stories, Peter Pan.",
+      "genre": "Animation, Adventure, Family",
+      "runtime": "77 min"
+    },
+    {
+      "id": 1701983850744,
+      "title": "The Jungle Book",
+      "rating": "7.4",
+      "movieSummary": "After a threat from the tiger Shere Khan forces him to flee the jungle, a man-cub named Mowgli embarks on a journey of self discovery with the help of panther Bagheera and free-spirited bear Baloo.",
+      "genre": "Adventure, Drama, Family",
+      "runtime": "106 min"
+    },
+    {
+      "id": 1701983862995,
+      "title": "Dumbo",
+      "rating": "7.2",
+      "movieSummary": "Ridiculed because of his enormous ears, a young circus elephant is assisted by a mouse to achieve his full potential.",
+      "genre": "Animation, Adventure, Drama",
+      "runtime": "64 min"
+    },
+    {
+      "id": 1701983868069,
+      "title": "Pinocchio",
+      "rating": "7.5",
+      "movieSummary": "A living puppet, with the help of a cricket as his conscience, must prove himself worthy to become a real boy.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "88 min"
+    },
+    {
+      "id": 1701983873006,
+      "title": "Bambi",
+      "rating": "7.3",
+      "movieSummary": "The story of a young deer growing up in the forest.",
+      "genre": "Animation, Adventure, Drama",
+      "runtime": "69 min"
+    },
+    {
+      "id": 1701983891925,
+      "title": "Aladdin and the King of Thieves",
+      "rating": "6.4",
+      "movieSummary": "The King of Thieves disrupts Aladdin and Jasmine's long-anticipated wedding, looking for an oracle that will lead him to an even bigger treasure. His true identity causes trouble for Aladdin.",
+      "genre": "Animation, Adventure, Comedy, Family, Fantasy, Musical, Romance",
+      "runtime": "81 min"
+    },
+    {
+      "id": 1701983897690,
+      "title": "Mulan II",
+      "rating": "5.7",
+      "movieSummary": "While preparing for their wedding, Shang and Mulan are suddenly sent off on a secret mission. Mushu starts to meddle, and a surprise attack by Mongolians doesn't help either.",
+      "genre": "Animation, Action, Comedy, Family, Musical",
+      "runtime": "79 min"
+    },
+    {
+      "id": 1701983920419,
+      "title": "Tangled",
+      "rating": "7.7",
+      "movieSummary": "The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time, and who she really is.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "100 min"
+    },
+    {
+      "id": 1701983972015,
+      "title": "Frozen Fever",
+      "rating": "6.8",
+      "movieSummary": "On Anna's birthday, Elsa and Kristoff are determined to give her the best celebration ever, but Elsa's icy powers may put more than just the party at risk.",
+      "genre": "Animation, Short, Adventure",
+      "runtime": "8 min"
+    },
+    {
+      "id": 1701983985332,
+      "title": "Olaf's Frozen Adventure",
+      "rating": "5.7",
+      "movieSummary": "A Christmas-themed special featuring characters from Walt Disney Pictures' 53rd full-length animated motion picture, \"Frozen (2013)\".",
+      "genre": "Animation, Short, Adventure",
+      "runtime": "22 min"
+    },
+    {
+      "id": 1701983991856,
+      "title": "Toy Story Toons: Hawaiian Vacation",
+      "rating": "7.2",
+      "movieSummary": "The toys throw Ken and Barbie a Hawaiian vacation in Bonnie's room.",
+      "genre": "Animation, Short, Comedy",
+      "runtime": "6 min"
+    },
+    {
+      "id": 1701983997366,
+      "title": "Toy Story Toons: Small Fry",
+      "rating": "7.0",
+      "movieSummary": "A fast food restaurant mini variant of Buzz forcibly switches places with the real Buzz and his friends have to deal with the obnoxious impostor.",
+      "genre": "Animation, Short, Comedy",
+      "runtime": "7 min"
+    },
+    {
+      "id": 1701984006235,
+      "title": "Toy Story Toons: Partysaurus Rex",
+      "rating": "7.4",
+      "movieSummary": "When Rex finds himself left behind in the bathroom, he puts his limbs to use by getting a bath going for a bunch of new toy friends.",
+      "genre": "Animation, Short, Adventure",
+      "runtime": "7 min"
+    },
+    {
+      "id": 1701984010832,
+      "title": "The Lion Guard: Return of the Roar",
+      "rating": "5.6",
+      "movieSummary": "Set in the African Savanna, the film follows Kion as he assembles the members of the 'Lion Guard'. Throughout the film, the diverse team of young animals will learn how to utilize each of their unique abilities to solve problems a...",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "44 min"
     }
   ]
 }
