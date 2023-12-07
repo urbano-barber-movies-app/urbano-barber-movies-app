@@ -150,13 +150,19 @@ function fetchMoviesAndCreateCards() {
         .then(data => {
             moviesData = data;
 
-            // Clear the loading screen
-            const loadingScreen = document.querySelector('.loading-center');
-            loadingScreen.style.display = 'none';
+            // Introduce a 3-second delay before clearing the loading screen
+            setTimeout(() => {
+                // Clear the loading screen
+                const loadingScreen = document.querySelector('.loading-center');
+                loadingScreen.style.display = 'none';
 
-            moviesData.forEach(movie => {
-                createMovieCard(movie);
-            });
+                const pageSelector = document.querySelector('.text-center');
+                pageSelector.style.display = 'block'
+
+                moviesData.forEach(movie => {
+                    createMovieCard(movie);
+                });
+            }, 3000); // 3000 milliseconds = 3 seconds
         })
         .catch(error => {
             console.error('Error fetching movies data:', error.message);
