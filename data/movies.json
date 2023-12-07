@@ -3,11 +3,10 @@
     {
       "id": 1,
       "title": "Star Wars: Episode IV - A New Hope",
+      "rating": "8.6",
+      "genre": "Science Fiction, Action, Adventure, Fantasy",
       "movieSummary": "Luke Skywalker, a young farm boy on the desert planet Tatooine, embarks on a journey to rescue Princess Leia from the evil Darth Vader and help the Rebel Alliance in their fight against the Galactic Empire.",
-      "genre": [
-        "Science Fiction, Action, Adventure, Fantasy"
-      ],
-      "rating": "8.6"
+      "runtime": "121 min"
     },
     {
       "id": 2,
@@ -16,7 +15,8 @@
       "genre": [
         "Science Fiction, Action, Adventure, Fantasy"
       ],
-      "rating": "8.7"
+      "rating": "8.7",
+      "runtime": "124 min"
     },
     {
       "id": 3,
@@ -25,7 +25,8 @@
       "genre": [
         "Science Fiction, Action, Adventure, Fantasy"
       ],
-      "rating": "8.3"
+      "rating": "8.3",
+      "runtime": "131 min"
     },
     {
       "id": 4,
@@ -34,7 +35,8 @@
       "genre": [
         "Science Fiction, Action, Adventure, Fantasy"
       ],
-      "rating": "6.5"
+      "rating": "6.5",
+      "runtime": "136 min"
     },
     {
       "id": 5,
@@ -43,7 +45,8 @@
       "genre": [
         "Science Fiction, Action, Adventure, Fantasy"
       ],
-      "rating": "6.6"
+      "rating": "6.6",
+      "runtime": "142 min"
     },
     {
       "id": 6,
@@ -52,7 +55,8 @@
       "genre": [
         "Science Fiction, Action, Adventure, Fantasy"
       ],
-      "rating": "7.5"
+      "rating": "7.5",
+      "runtime": "140 min"
     },
     {
       "id": 7,
@@ -61,7 +65,8 @@
       "genre": [
         "Science Fiction, Action, Adventure, Fantasy"
       ],
-      "rating": "7.8"
+      "rating": "7.8",
+      "runtime": "138 min"
     },
     {
       "id": 8,
@@ -70,7 +75,8 @@
       "genre": [
         "Science Fiction, Action, Adventure, Fantasy"
       ],
-      "rating": "7.0"
+      "rating": "7.0",
+      "runtime": "151 min"
     },
     {
       "id": 9,
@@ -79,7 +85,24 @@
       "genre": [
         "Science Fiction, Action, Adventure, Fantasy"
       ],
-      "rating": "6.5"
+      "rating": "6.5",
+      "runtime": "142 min"
+    },
+    {
+      "id": 1701970961912,
+      "title": "Shrek",
+      "rating": "7.9",
+      "movieSummary": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "90 min"
+    },
+    {
+      "id": 1701972430271,
+      "title": "Shrek 2",
+      "rating": "7.3",
+      "movieSummary": "Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.",
+      "genre": "Animation, Adventure, Comedy",
+      "runtime": "93 min"
     }
   ]
 }

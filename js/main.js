@@ -56,6 +56,10 @@ function createMovieCard(movie) {
     summaryText.className = 'summary-text';
     summaryText.textContent = `Summary: ${movie.movieSummary}`;
 
+    const runTime = document.createElement('p');
+    runTime.className = 'runtime-text';
+    runTime.textContent = `Runtime: ${movie.runtime}`;
+
     const editButton = document.createElement('button');
     editButton.className = 'btn btn-primary btn-edit';
     editButton.textContent = 'Edit';
@@ -67,6 +71,7 @@ function createMovieCard(movie) {
         document.getElementById('editRating').value = movie.rating;
         document.getElementById('editGenre').value = movie.genre;
         document.getElementById('editSummary').value = movie.movieSummary;
+        document.getElementById('editRuntime').value = movie.runtime;
 
         // Add delete button to the edit form
         const deleteButton = document.getElementById("deleteButton")
@@ -109,6 +114,7 @@ function createMovieCard(movie) {
     cardBody.appendChild(genreElement);
     cardBody.appendChild(ratingElement);
     cardBody.appendChild(summaryText);
+    cardBody.appendChild(runTime)
     movieListContainer.appendChild(card);
 
     const apiUrl = `http://www.omdbapi.com/?t=${encodeURIComponent(movie.title)}&apikey=${API_KEY}`;
@@ -168,8 +174,9 @@ document.getElementById('saveEdit').addEventListener('click', function () {
         rating: document.getElementById('editRating').value,
         genre: document.getElementById('editGenre').value,
         movieSummary: document.getElementById('editSummary').value,
-        // checkAndPopulateGenreDropdown(),
+        runtime: document.getElementById('editRuntime').value,
     };
+
 
     const editedIndex = moviesData.findIndex(movie => movie.title === editedMovie.title);
 
@@ -229,6 +236,7 @@ addMovieForm.addEventListener('submit', function (event) {
                     rating: data.imdbRating,
                     movieSummary: data.Plot,
                     genre: data.Genre,
+                    runtime: data.Runtime
                 };
 
                 // Check if the movie title already exists
@@ -389,5 +397,51 @@ function checkAndPopulateGenreDropdown() {
         populateGenreDropdown();
     }
 }
+const sortSelect = document.getElementById('sort');
+
+sortSelect.addEventListener('change', function () {
+    const selectedOption = sortSelect.value;
+
+    if (selectedOption === 'title_asc') {
+        // Sort moviesData by title in ascending order
+        moviesData.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (selectedOption === 'title_desc') {
+        // Sort moviesData by title in descending order
+        moviesData.sort((a, b) => b.title.localeCompare(a.title));
+    } else if (selectedOption === 'rating_asc') {
+        // Sort moviesData by rating in ascending order
+        moviesData.sort((a, b) => parseFloat(a.rating) - parseFloat(b.rating));
+    } else if (selectedOption === 'rating_desc') {
+        // Sort moviesData by rating in descending order
+        moviesData.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
+    } else if (selectedOption === 'runtime_asc') {
+        // Sort moviesData by runtime in ascending order
+        moviesData.sort((a, b) => {
+            return parseRuntime(a.runtime) - parseRuntime(b.runtime);
+        });
+    } else if (selectedOption === 'runtime_desc') {
+        // Sort moviesData by runtime in descending order
+        moviesData.sort((a, b) => {
+            return parseRuntime(b.runtime) - parseRuntime(a.runtime);
+        });
+    }
+    function parseRuntime(runtime) {
+        const parts = runtime.match(/\d+/g);
+
+        if (!parts) {
+            return 0; // Return 0 if no numeric part is found
+        }
+
+        const hours = parseInt(parts[0]) || 0;
+        const minutes = parseInt(parts[1]) || 0;
+
+        return hours * 60 + minutes;
+    }
+
+    // Update the displayed movies based on the sorted moviesData
+    updateDisplayedMovies(moviesData);
+});
+
+
 // Call the function to populate genres in the dropdown
 populateGenreDropdown();
