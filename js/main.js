@@ -442,6 +442,47 @@ sortSelect.addEventListener('change', function () {
     updateDisplayedMovies(moviesData);
 });
 
-
 // Call the function to populate genres in the dropdown
 populateGenreDropdown();
+
+// Define variables for pagination
+let currentPage = 1;
+let moviesPerPage = 9; // Set to 9 to limit movies per page
+
+// Function to update the displayed movies based on the current page
+function updateDisplayedMoviesPage() {
+    const startIndex = (currentPage - 1) * moviesPerPage;
+    const endIndex = startIndex + moviesPerPage;
+    const moviesToDisplay = moviesData.slice(startIndex, endIndex);
+    updateDisplayedMovies(moviesToDisplay);
+    document.getElementById('currentPage').textContent = `Page ${currentPage}`;
+}
+
+// Event listener for the "Previous" button
+document.getElementById('prevPage').addEventListener('click', function () {
+    if (currentPage > 1) {
+        currentPage--;
+        updateDisplayedMoviesPage();
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }
+});
+
+// Event listener for the "Next" button
+document.getElementById('nextPage').addEventListener('click', function () {
+    const totalPages = Math.ceil(moviesData.length / moviesPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        updateDisplayedMoviesPage();
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    }
+});
+
+// Event listener for changing the number of movies per page
+document.getElementById('moviesPerPage').addEventListener('change', function () {
+    moviesPerPage = parseInt(this.value);
+    currentPage = 1;
+    updateDisplayedMoviesPage();
+});
+
+// Call the function to update the displayed movies on page load
+updateDisplayedMoviesPage();

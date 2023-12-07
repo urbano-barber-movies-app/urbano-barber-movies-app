@@ -103,6 +103,14 @@
       "movieSummary": "Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.",
       "genre": "Animation, Adventure, Comedy",
       "runtime": "93 min"
+    },
+    {
+      "id": 1701981000624,
+      "title": "300",
+      "rating": "7.6",
+      "movieSummary": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
+      "genre": "Action, Drama",
+      "runtime": "117 min"
     }
   ]
 }
