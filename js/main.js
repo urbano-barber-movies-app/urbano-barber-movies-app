@@ -4,7 +4,7 @@ const numberOfDots = 250;
 // Function to generate random coordinates within the viewport
 function getRandomPosition() {
     const x = Math.random() * window.innerWidth;
-    const y = Math.random() * window.innerHeight;
+    const y = Math.random() * (window.innerWidth * 1.4);
     return { x, y };
 }
 
@@ -364,11 +364,6 @@ searchButton.addEventListener('click', function () {
     updateDisplayedMovies(filteredMovies);
 });
 
-// Event listener for the "Cancel" button (to reset the displayed movies)
-// cancelSearchButton.addEventListener('click', function () {
-//     // Reset the displayed movies to the full list
-//     updateDisplayedMovies(moviesData);
-// });
 
 // Event listener for the "Rating" dropdown
 
