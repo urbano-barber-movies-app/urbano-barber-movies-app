@@ -48,6 +48,48 @@
       "rating": "7.6",
       "movieSummary": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
       "genre": "Action, Drama"
+    },
+    {
+      "id": 1701962487896,
+      "title": "Star Wars: Episode IV - A New Hope",
+      "rating": "8.6",
+      "movieSummary": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth ...",
+      "genre": "Action, Adventure, Fantasy"
+    },
+    {
+      "id": 1701962559611,
+      "title": "Star Wars: Episode V - The Empire Strikes Back",
+      "rating": "8.7",
+      "movieSummary": "After the Rebels are overpowered by the Empire, Luke Skywalker begins his Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett.",
+      "genre": "Action, Adventure, Fantasy"
+    },
+    {
+      "id": 1701962588509,
+      "title": "Star Wars: Episode VI - Return of the Jedi",
+      "rating": "8.3",
+      "movieSummary": "After rescuing Han Solo from Jabba the Hutt, the Rebels attempt to destroy the second Death Star, while Luke struggles to help Darth Vader back from the dark side.",
+      "genre": "Action, Adventure, Fantasy"
+    },
+    {
+      "id": 1701962611565,
+      "title": "Star Wars: Episode I - The Phantom Menace",
+      "rating": "6.5",
+      "movieSummary": "Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory.",
+      "genre": "Action, Adventure, Fantasy"
+    },
+    {
+      "id": 1701962623974,
+      "title": "Star Wars: Episode II - Attack of the Clones",
+      "rating": "6.6",
+      "movieSummary": "Ten years after initially meeting, Anakin Skywalker shares a forbidden romance with Padmé Amidala, while Obi-Wan Kenobi discovers a secret clone army crafted for the Jedi.",
+      "genre": "Action, Adventure, Fantasy"
+    },
+    {
+      "id": 1701962648925,
+      "title": "Star Wars: Episode III - Revenge of the Sith",
+      "rating": "7.6",
+      "movieSummary": "Three years into the Clone Wars, Obi-Wan pursues a new threat, while Anakin is lured by Chancellor Palpatine into a sinister plot to rule the galaxy.",
+      "genre": "Action, Adventure, Fantasy"
     }
   ]
 }

@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 /* Add this CSS code to your styles.css file */
@@ -83,7 +84,8 @@ body {
 .card {
     width: 300px; /* Adjust the card width as needed */
     margin: 20px; /* Add margin to separate the cards */
-    color: #1a1a1a;
+    color: #ffe81f;
+    background-color: grey;
 }
 
 /* Style the movie poster on hover */
@@ -360,7 +362,7 @@ body {
 /*Dark Mode*/
 body.dark-mode {
     background-color: #1a1a1a;
-    color: #ffffff;
+    color: #ffe81f;
 }
 /* Add more styles for dark mode as needed */
 .switch {
