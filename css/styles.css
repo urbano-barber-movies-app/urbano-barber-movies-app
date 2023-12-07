@@ -11,8 +11,23 @@ body {
     margin-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: right;
 }
-
+.bb8-position{
+    position: absolute;
+    top: 10px;
+}
+.dot {
+    position: absolute;
+    width: 5px; /* Adjust the size of the dots */
+    height: 5px; /* Adjust the size of the dots */
+    background-color: #fff; /* White color */
+    border-radius: 50%; /* Make the dots circular */
+    z-index: -1;
+}
+.header-center{
+    text-align: center;
+}
 .search-results-popup {
     display: none;
     position: fixed;

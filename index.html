@@ -13,6 +13,73 @@
 </head>
 <body>
 <div class="container">
+    <h1 class="mt-4 movie-header">Wookie Media</h1>
+    <div class="search-container">
+
+        <div class="form-group">
+            <label for="searchTitle">Title:</label>
+            <input type="text" class="form-control title-placement" id="searchTitle" placeholder="Search by Title">
+        </div>
+
+        <div class="form-group">
+            <label for="searchGenre">Genre:</label>
+            <select class="form-control genre-placement" id="searchGenre">
+                <!-- Populate this dropdown dynamically using JavaScript -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="searchRating">Rating:</label>
+            <select class="form-control rating-placement" id="searchRating">
+                <option value="">Any</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <button id="searchButton" class="btn btn-primary">Search</button>
+    </div>
+
+    <div id="searchResultsPopup" class="search-results-popup">
+        <!-- Results will be dynamically added here -->
+        <button id="cancelSearch">Cancel</button>
+    </div>
+    <div class="bb8-position">
+        <label class="bb8-toggle mt-5">
+            <input class="bb8-toggle__checkbox" type="checkbox" id="darkModeToggle">
+            <div class="bb8-toggle__container">
+                <div class="bb8-toggle__scenery">
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="bb8-toggle__star"></div>
+                    <div class="tatto-1"></div>
+                    <div class="tatto-2"></div>
+                    <div class="gomrassen"></div>
+                    <div class="hermes"></div>
+                    <div class="chenini"></div>
+                    <div class="bb8-toggle__cloud"></div>
+                    <div class="bb8-toggle__cloud"></div>
+                    <div class="bb8-toggle__cloud"></div>
+                </div>
+                <div class="bb8">
+                    <div class="bb8__head-container">
+                        <div class="bb8__antenna"></div>
+                        <div class="bb8__antenna"></div>
+                        <div class="bb8__head"></div>
+                    </div>
+                    <div class="bb8__body"></div>
+                </div>
+                <div class="artificial__hidden">
+                    <div class="bb8__shadow"></div>
+                </div>
+            </div>
+    </div>
+    </label>
+
     <div class="loading-center">
         <!-- Loading animation if needed -->
         <div class="pl">
@@ -30,45 +97,8 @@
             <div class="pl__dot"></div>
         </div>
     </div>
-    <!--    <label class="switch">-->
-    <!--        <input type="checkbox" id="darkModeToggle">-->
-    <!--        <span class="slider round"></span>-->
-    <!--    </label>-->
-    <label class="bb8-toggle mt-5">
-        <input class="bb8-toggle__checkbox" type="checkbox" id="darkModeToggle">
-        <div class="bb8-toggle__container">
-            <div class="bb8-toggle__scenery">
-                <div class="bb8-toggle__star"></div>
-                <div class="bb8-toggle__star"></div>
-                <div class="bb8-toggle__star"></div>
-                <div class="bb8-toggle__star"></div>
-                <div class="bb8-toggle__star"></div>
-                <div class="bb8-toggle__star"></div>
-                <div class="bb8-toggle__star"></div>
-                <div class="tatto-1"></div>
-                <div class="tatto-2"></div>
-                <div class="gomrassen"></div>
-                <div class="hermes"></div>
-                <div class="chenini"></div>
-                <div class="bb8-toggle__cloud"></div>
-                <div class="bb8-toggle__cloud"></div>
-                <div class="bb8-toggle__cloud"></div>
-            </div>
-            <div class="bb8">
-                <div class="bb8__head-container">
-                    <div class="bb8__antenna"></div>
-                    <div class="bb8__antenna"></div>
-                    <div class="bb8__head"></div>
-                </div>
-                <div class="bb8__body"></div>
-            </div>
-            <div class="artificial__hidden">
-                <div class="bb8__shadow"></div>
-            </div>
-        </div>
-    </label>
     <div class="movie-list">
-        <h1 class="mt-4 movie-header">Wookie Media</h1>
+
         <form id="add-movie-form" class="mt-4">
             <div class="mb-3">
                 <label for="title" class="form-label">Title:</label>
@@ -77,25 +107,7 @@
             <button type="submit" class="btn btn-primary">Add Movie</button>
         </form>
         <!-- Add this inside the <div class="container"> -->
-        <div class="search-container">
-            <input type="text" id="searchTitle" placeholder="Search by Title">
-            <select id="searchGenre">
-                <!-- Populate this dropdown dynamically using JavaScript -->
 
-            </select>
-            <label for="searchRating">Rating:</label>
-            <select id="searchRating">
-                <option value="">Any</option>
-            </select>
-
-
-            <button id="searchButton">Search</button>
-        </div>
-
-        <div id="searchResultsPopup" class="search-results-popup">
-            <!-- Results will be dynamically added here -->
-            <button id="cancelSearch">Cancel</button>
-        </div>
 
         <div class="row" id="movie-list-container">
             <!-- Movie cards will be added here -->

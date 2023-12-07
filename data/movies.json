@@ -1,95 +1,85 @@
 {
   "movies": [
     {
-      "id": 1701884197071,
-      "title": "Cars",
-      "rating": "7.2",
-      "movieSummary": "On the way to the biggest race of his life, a hotshot rookie race car gets stranded in a rundown town and learns that winning isn't everything in life.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701884604900,
-      "title": "Cars 3",
-      "rating": "6.7",
-      "movieSummary": "Lightning McQueen sets out to prove to a new generation of racers that he's still the best race car in the world.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701884607411,
-      "title": "Shrek",
-      "rating": "7.9",
-      "movieSummary": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701884610386,
-      "title": "Shrek 2",
-      "rating": "7.3",
-      "movieSummary": "Shrek and Fiona travel to the Kingdom of Far Far Away, where Fiona's parents are King and Queen, to celebrate their marriage. When they arrive, they find they are not as welcome as they thought they would be.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701884616166,
-      "title": "Shrek the Third",
-      "rating": "6.1",
-      "movieSummary": "Reluctantly designated as the heir to the land of Far, Far Away, Shrek hatches a plan to install the rebellious Artie as the new king while Princess Fiona tries to fend off a coup d'état by the jilted Prince Charming.",
-      "genre": "Animation, Adventure, Comedy"
-    },
-    {
-      "id": 1701890321988,
-      "title": "Die Hard",
-      "rating": "8.2",
-      "movieSummary": "A New York City police officer tries to save his estranged wife and several others taken hostage by terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
-      "genre": "Action, Thriller"
-    },
-    {
-      "id": 1701891187413,
-      "title": "300",
-      "rating": "7.6",
-      "movieSummary": "King Leonidas of Sparta and a force of 300 men fight the Persians at Thermopylae in 480 B.C.",
-      "genre": "Action, Drama"
-    },
-    {
-      "id": 1701962487896,
+      "id": 1,
       "title": "Star Wars: Episode IV - A New Hope",
-      "rating": "8.6",
-      "movieSummary": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth ...",
-      "genre": "Action, Adventure, Fantasy"
+      "movieSummary": "Luke Skywalker, a young farm boy on the desert planet Tatooine, embarks on a journey to rescue Princess Leia from the evil Darth Vader and help the Rebel Alliance in their fight against the Galactic Empire.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "8.6"
     },
     {
-      "id": 1701962559611,
+      "id": 2,
       "title": "Star Wars: Episode V - The Empire Strikes Back",
-      "rating": "8.7",
-      "movieSummary": "After the Rebels are overpowered by the Empire, Luke Skywalker begins his Jedi training with Yoda, while his friends are pursued across the galaxy by Darth Vader and bounty hunter Boba Fett.",
-      "genre": "Action, Adventure, Fantasy"
+      "movieSummary": "After the Rebels suffer a major defeat, Luke Skywalker goes to the planet Dagobah to train with Jedi Master Yoda, while his friends Han Solo and Princess Leia face off against the Empire's forces.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "8.7"
     },
     {
-      "id": 1701962588509,
+      "id": 3,
       "title": "Star Wars: Episode VI - Return of the Jedi",
-      "rating": "8.3",
-      "movieSummary": "After rescuing Han Solo from Jabba the Hutt, the Rebels attempt to destroy the second Death Star, while Luke struggles to help Darth Vader back from the dark side.",
-      "genre": "Action, Adventure, Fantasy"
+      "movieSummary": "Luke Skywalker confronts Darth Vader and the Emperor, while the Rebel Alliance launches a final assault on the Death Star, leading to the ultimate showdown between good and evil.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "8.3"
     },
     {
-      "id": 1701962611565,
+      "id": 4,
       "title": "Star Wars: Episode I - The Phantom Menace",
-      "rating": "6.5",
-      "movieSummary": "Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory.",
-      "genre": "Action, Adventure, Fantasy"
+      "movieSummary": "Two Jedi Knights, Qui-Gon Jinn and Obi-Wan Kenobi, discover a young slave named Anakin Skywalker who may be the Chosen One destined to bring balance to the Force while facing the emergence of the Sith.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "6.5"
     },
     {
-      "id": 1701962623974,
+      "id": 5,
       "title": "Star Wars: Episode II - Attack of the Clones",
-      "rating": "6.6",
-      "movieSummary": "Ten years after initially meeting, Anakin Skywalker shares a forbidden romance with Padmé Amidala, while Obi-Wan Kenobi discovers a secret clone army crafted for the Jedi.",
-      "genre": "Action, Adventure, Fantasy"
+      "movieSummary": "Anakin Skywalker becomes a Jedi apprentice while the Galactic Republic faces growing turmoil, leading to the Clone Wars, a conflict that will shape the destiny of the galaxy.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "6.6"
     },
     {
-      "id": 1701962648925,
+      "id": 6,
       "title": "Star Wars: Episode III - Revenge of the Sith",
-      "rating": "7.6",
-      "movieSummary": "Three years into the Clone Wars, Obi-Wan pursues a new threat, while Anakin is lured by Chancellor Palpatine into a sinister plot to rule the galaxy.",
-      "genre": "Action, Adventure, Fantasy"
+      "movieSummary": "Anakin Skywalker succumbs to the dark side and becomes Darth Vader, while the Republic transforms into the Empire, ultimately leading to the rise of the Rebel Alliance.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "7.5"
+    },
+    {
+      "id": 7,
+      "title": "Star Wars: Episode VII - The Force Awakens",
+      "movieSummary": "A new generation of heroes and villains emerges as the Resistance and the First Order clash in a galaxy still haunted by the legacy of the Sith and the Jedi.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "7.8"
+    },
+    {
+      "id": 8,
+      "title": "Star Wars: Episode VIII - The Last Jedi",
+      "movieSummary": "Rey seeks training from Luke Skywalker, but the Resistance faces dire circumstances as the First Order closes in, testing the heroes' resolve and the power of the Force.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "7.0"
+    },
+    {
+      "id": 9,
+      "title": "Star Wars: Episode IX - The Rise of Skywalker",
+      "movieSummary": "The Resistance faces the return of Emperor Palpatine, and Rey, along with her allies, must confront the ultimate evil while seeking to restore hope to the galaxy.",
+      "genre": [
+        "Science Fiction, Action, Adventure, Fantasy"
+      ],
+      "rating": "6.5"
     }
   ]
 }

@@ -1,5 +1,25 @@
 // main.js
+const numberOfDots = 250;
 
+// Function to generate random coordinates within the viewport
+function getRandomPosition() {
+    const x = Math.random() * window.innerWidth;
+    const y = Math.random() * window.innerHeight;
+    return { x, y };
+}
+
+// Create and add dots to the body
+for (let i = 0; i < numberOfDots; i++) {
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+
+    const position = getRandomPosition();
+
+    dot.style.left = position.x + "px";
+    dot.style.top = position.y + "px";
+
+    document.body.appendChild(dot);
+}
 const API_KEY = '4f538816';
 let moviesData = []; // Initialize moviesData as an empty array globally
 
