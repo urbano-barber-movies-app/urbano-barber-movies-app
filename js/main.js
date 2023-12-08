@@ -308,6 +308,15 @@ function populateGenreDropdown() {
             console.error('Error fetching genres data:', error.message);
         });
 }
+searchGenreDropdown.addEventListener('change', function () {
+    const genreQuery = searchGenreDropdown.value;
+    searchByGenre(genreQuery);
+});
+searchGenreDropdown.addEventListener('change', function () {
+    console.log('Genre Dropdown Value:', searchGenreDropdown.value); // Add this line for debugging
+    const genreQuery = searchGenreDropdown.value;
+    searchByGenre(genreQuery);
+});
 
 // Function to search movies by title
 function searchByTitle(titleQuery) {
@@ -340,11 +349,11 @@ populateRatingDropdown();
 // Function to search movies by genre
 function searchByGenre(genreQuery) {
     const filteredMovies = moviesData.filter(movie => {
-        // Split the movie's genres into an array
-        const movieGenres = movie.genre.toLowerCase().split(', ');
-
-        // Check if any of the genres match the query
-        return genreQuery === '' || movieGenres.some(genre => genre.includes(genreQuery.toLowerCase()));
+        if (typeof movie.genre === 'string') {
+            const movieGenres = movie.genre.toLowerCase().split(', ');
+            return genreQuery === '' || movieGenres.some(genre => genre.includes(genreQuery.toLowerCase()));
+        }
+        return false; // Skip movies with invalid genre data
     });
 
     updateDisplayedMovies(filteredMovies);
@@ -408,6 +417,11 @@ function checkAndPopulateGenreDropdown() {
         populateGenreDropdown();
     }
 }
+
+// console.log('Genre Query:', genreQuery);
+console.log('Dropdown Value:', searchGenreDropdown.value);
+
+
 const sortSelect = document.getElementById('sort');
 
 sortSelect.addEventListener('change', function () {
