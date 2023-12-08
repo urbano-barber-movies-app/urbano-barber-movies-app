@@ -22,36 +22,7 @@
 <body>
 <div class="container">
     <h1 class="mt-4 movie-header"><span style="font-size: 64px">Wookie Media</span></h1>
-    <div class="search-container" style="position: absolute; top: 30px; right: 25px">
 
-        <div class="form-group">
-            <label for="searchTitle">Title:</label>
-            <input type="text" class="form-control title-placement" id="searchTitle" placeholder="Search by Title">
-        </div>
-
-        <div class="form-group">
-            <label for="searchGenre">Genre:</label>
-            <select class="form-control genre-placement" id="searchGenre">
-                <!-- Populate this dropdown dynamically using JavaScript -->
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="searchRating">Rating:</label>
-            <select class="form-control rating-placement" id="searchRating">
-                <option value="">Any</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="search-container" style="position: absolute; top: 110px; right: 25px;">
-        <button id="searchButton" class="btn btn-primary">Search</button>
-    </div>
-
-    <div id="searchResultsPopup" class="search-results-popup">
-        <!-- Results will be dynamically added here -->
-        <button id="cancelSearch">Cancel</button>
-    </div>
     <div class="bb8-position">
         <label class="bb8-toggle mt-5">
             <input class="bb8-toggle__checkbox" type="checkbox" id="darkModeToggle">
@@ -137,6 +108,36 @@
                     <option value="runtime_desc">Runtime (Longest to Shortest)</option>
                 </select>
             </div></div>
+        <div class="search-container" >
+
+            <div class="form-group">
+                <label for="searchTitle">Title:</label>
+                <input type="text" class="form-control title-placement" id="searchTitle" placeholder="Search by Title">
+            </div>
+
+            <div class="form-group" style="display: none">
+                <label for="searchGenre">Genre:</label>
+                <select class="form-control genre-placement" id="searchGenre">
+                    <!-- Populate this dropdown dynamically using JavaScript -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="searchRating">Rating:</label>
+                <select class="form-control rating-placement" id="searchRating">
+                    <option value="">Any</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <button id="searchButton" class="btn btn-primary">Search</button>
+        </div>
+
+        <div id="searchResultsPopup" class="search-results-popup">
+            <!-- Results will be dynamically added here -->
+            <button id="cancelSearch">Cancel</button>
+        </div>
         <!-- Add this inside the <div class="container"> -->
 
 

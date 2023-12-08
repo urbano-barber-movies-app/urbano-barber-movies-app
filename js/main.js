@@ -308,15 +308,15 @@ function populateGenreDropdown() {
             console.error('Error fetching genres data:', error.message);
         });
 }
-searchGenreDropdown.addEventListener('change', function () {
-    const genreQuery = searchGenreDropdown.value;
-    searchByGenre(genreQuery);
-});
-searchGenreDropdown.addEventListener('change', function () {
-    console.log('Genre Dropdown Value:', searchGenreDropdown.value); // Add this line for debugging
-    const genreQuery = searchGenreDropdown.value;
-    searchByGenre(genreQuery);
-});
+// searchGenreDropdown.addEventListener('change', function () {
+//     const genreQuery = searchGenreDropdown.value;
+//     searchByGenre(genreQuery);
+// });
+// searchGenreDropdown.addEventListener('change', function () {
+//     console.log('Genre Dropdown Value:', searchGenreDropdown.value); // Add this line for debugging
+//     const genreQuery = searchGenreDropdown.value;
+//     searchByGenre(genreQuery);
+// });
 
 // Function to search movies by title
 function searchByTitle(titleQuery) {
